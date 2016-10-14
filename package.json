@@ -1,0 +1,24 @@
+{
+  "name": "gedcomx-fs-js",
+  "version": "1.0.0",
+  "description": "JavaScript library for FamilySearch extensions to the GEDCOM X spec.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootsdev/gedcomx-fs-js.git"
+  },
+  "keywords": [
+    "gedcomx",
+    "familysearch",
+    "genealogy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rootsdev/gedcomx-fs-js/issues"
+  },
+  "homepage": "https://github.com/rootsdev/gedcomx-fs-js#readme"
+}
