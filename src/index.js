@@ -16,6 +16,7 @@ module.exports = function(GedcomX){
   require('./SearchInfo')(GedcomX);
   require('./SourceReference')(GedcomX);
   require('./Tag')(GedcomX);
+  require('./User')(GedcomX);
   
   // Property extensions
   require('./AtomEntry')(GedcomX);

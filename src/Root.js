@@ -4,7 +4,8 @@
 module.exports = function(GedcomX){
   
   // Extend serialization properties
-  GedcomX.Root.jsonProps.push('features','childAndParentsRelationships', 'discussions', 'feedbackInfo');
+  GedcomX.Root.jsonProps.push('features','childAndParentsRelationships', 
+    'discussions', 'feedbackInfo', 'users');
   
   // Override init() so that we can deserialize normalized values
   var oldInit = GedcomX.Root.prototype.init;
@@ -15,6 +16,7 @@ module.exports = function(GedcomX){
       this.setChildAndParentsRelationships(json.childAndParentsRelationships);
       this.setDiscussions(json.discussions);
       this.setFeedbackInfo(json.feedbackInfo);
+      this.setUsers(json.users);
     }
   };
   
@@ -132,6 +134,35 @@ module.exports = function(GedcomX){
    */
   GedcomX.Root.prototype.getFeedbackInfo = function(){
     return this.feedbackInfo || [];
+  };
+  
+  /**
+   * Set the users
+   * 
+   * @param {User[]} users
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.setUsers = function(users){
+    return this._setArray(users, 'users', 'addUser');
+  };
+  
+  /**
+   * Add a user
+   * 
+   * @param {User} user
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.addUser = function(user){
+    return this._arrayPush(user, 'users', GedcomX.User);
+  };
+  
+  /**
+   * Get the users
+   * 
+   * @return {User[]} users
+   */
+  GedcomX.Root.prototype.getUsers = function(){
+    return this.users || [];
   };
   
 };

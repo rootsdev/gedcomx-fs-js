@@ -189,4 +189,50 @@ describe('Root GedcomX property extensions', function(){
     
   });
   
+  describe('users', function(){
+    
+    var json = {
+      "users" : [ {
+        "id" : "cis.MMM.RX9",
+        "contactName" : "Pete Townsend",
+        "fullName" : "Pete Townsend",
+        "email" : "peter@acme.org",
+        "personId" : "JNM-VRQM",
+        "treeUserId" : "PXRQ-FMXT"
+      } ]
+    };
+    
+    it('Create with JSON', function(){
+      test(GedcomX(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX().addUser(
+        GedcomX.User()
+          .setId(json.users[0].id)
+          .setContactName(json.users[0].contactName)
+          .setFullName(json.users[0].fullName)
+          .setEmail(json.users[0].email)
+          .setPersonId(json.users[0].personId)
+          .setTreeUserId(json.users[0].treeUserId)
+      ));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX(json).toJSON(), json);
+    });
+    
+    function test(gedx){
+      assert.equal(gedx.getUsers().length, 1);
+      var user = gedx.getUsers()[0];
+      assert.equal(user.getId(), json.users[0].id);
+      assert.equal(user.getContactName(), json.users[0].contactName);
+      assert.equal(user.getFullName(), json.users[0].fullName);
+      assert.equal(user.getEmail(), json.users[0].email);
+      assert.equal(user.getPersonId(), json.users[0].personId);
+      assert.equal(user.getTreeUserId(), json.users[0].treeUserId);
+    }
+    
+  });
+  
 });
