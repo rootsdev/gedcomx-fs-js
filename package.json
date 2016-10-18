@@ -25,7 +25,7 @@
     "chai": "^3.5.0",
     "chai-json-schema": "^1.4.0",
     "gedcomx-fs-json-schema": "^1.0.0",
-    "gedcomx-js": "^2.3.0",
+    "gedcomx-js": "^2.4.0",
     "mocha": "^3.1.2"
   }
 }
