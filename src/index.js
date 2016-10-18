@@ -3,6 +3,7 @@ module.exports = function(GedcomX){
   // New data types
   require('./ChangeInfo')(GedcomX);
   require('./ChildAndParentsRelationship')(GedcomX);
+  require('./Comment')(GedcomX);
   require('./FeatureSet')(GedcomX);
   
   // Property extensions

@@ -73,7 +73,7 @@ module.exports = function(GedcomX){
   /**
    * Get the objectModifier
    * 
-   * @returns string objectModifier
+   * @returns {String} objectModifier
    */
   ChangeInfo.prototype.getObjectModifier = function(){
     return this.objectModifier;
@@ -82,7 +82,7 @@ module.exports = function(GedcomX){
   /**
    * Set the objectModifier
    * 
-   * @param string objectModifier
+   * @param {String} objectModifier
    * @returns {ChangeInfo} this
    */
   ChangeInfo.prototype.setObjectModifier = function(objectModifier){
@@ -93,7 +93,7 @@ module.exports = function(GedcomX){
   /**
    * Get the operation
    * 
-   * @returns string operation
+   * @returns {String} operation
    */
   ChangeInfo.prototype.getOperation = function(){
     return this.operation;
@@ -102,7 +102,7 @@ module.exports = function(GedcomX){
   /**
    * Set the operation
    * 
-   * @param string operation
+   * @param {String} operation
    * @returns {ChangeInfo} this
    */
   ChangeInfo.prototype.setOperation = function(operation){
@@ -113,7 +113,7 @@ module.exports = function(GedcomX){
   /**
    * Get the reason
    * 
-   * @returns string reason
+   * @returns {String} reason
    */
   ChangeInfo.prototype.getReason = function(){
     return this.reason;
@@ -122,7 +122,7 @@ module.exports = function(GedcomX){
   /**
    * Set the reason
    * 
-   * @param string reason
+   * @param {String} reason
    * @returns {ChangeInfo} this
    */
   ChangeInfo.prototype.setReason = function(reason){
@@ -133,7 +133,7 @@ module.exports = function(GedcomX){
   /**
    * Get the objectType
    * 
-   * @returns string objectType
+   * @returns {String} objectType
    */
   ChangeInfo.prototype.getObjectType = function(){
     return this.objectType;
@@ -142,7 +142,7 @@ module.exports = function(GedcomX){
   /**
    * Set the objectType
    * 
-   * @param string objectType
+   * @param {String} objectType
    * @returns {ChangeInfo} this
    */
   ChangeInfo.prototype.setObjectType = function(objectType){
