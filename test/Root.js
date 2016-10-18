@@ -95,4 +95,56 @@ describe('Root GedcomX property extensions', function(){
     
   });
   
+  describe('discussions', function(){
+    
+    var json = {
+      "discussions" : [ {
+        "id" : "dis-MMMM-MMM",
+        "title" : "1900 US Census, Ethel Hollivet",
+        "details" : "Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  ",
+        "contributor" : {
+          "resource" : "https://familysearch.org/platform/users/agents/JNYR-KJP",
+          "resourceId" : "JNYR-KJP"
+        },
+        "created" : 1475597268000,
+        "modified" : 1475597268000,
+        "numberOfComments" : 2
+      } ]
+    };
+  
+    it('Create with JSON', function(){
+      test(GedcomX(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX().addDiscussion(
+        GedcomX.Discussion()
+          .setId(json.discussions[0].id)
+          .setTitle(json.discussions[0].title)
+          .setDetails(json.discussions[0].details)
+          .setContributor(json.discussions[0].contributor)
+          .setCreated(json.discussions[0].created)
+          .setModified(json.discussions[0].modified)
+          .setNumberOfComments(json.discussions[0].numberOfComments)
+      ));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX(json).toJSON(), json);
+    });
+
+    function test(gedx){
+      assert.equal(gedx.getDiscussions().length, 1);
+      var discussion = gedx.getDiscussions()[0];
+      assert.equal(discussion.getId(), json.discussions[0].id);
+      assert.equal(discussion.getTitle(), json.discussions[0].title);
+      assert.equal(discussion.getDetails(), json.discussions[0].details);
+      assert.equal(discussion.getCreated().getTime(), json.discussions[0].created);
+      assert.equal(discussion.getModified().getTime(), json.discussions[0].modified);
+      assert.deepEqual(discussion.getContributor().toJSON(), json.discussions[0].contributor);
+      assert.equal(discussion.getNumberOfComments(), json.discussions[0].numberOfComments);
+    }
+    
+  });
+  
 });

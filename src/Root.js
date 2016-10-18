@@ -4,7 +4,7 @@
 module.exports = function(GedcomX){
   
   // Extend serialization properties
-  GedcomX.Root.jsonProps.push('features','childAndParentsRelationships');
+  GedcomX.Root.jsonProps.push('features','childAndParentsRelationships', 'discussions');
   
   // Override init() so that we can deserialize normalized values
   var oldInit = GedcomX.Root.prototype.init;
@@ -13,6 +13,7 @@ module.exports = function(GedcomX){
     if(json){
       this.setFeatures(json.features);
       this.setChildAndParentsRelationships(json.childAndParentsRelationships);
+      this.setDiscussions(json.discussions);
     }
   };
   
@@ -72,6 +73,35 @@ module.exports = function(GedcomX){
    */
   GedcomX.Root.prototype.getChildAndParentsRelationships = function(){
     return this.childAndParentsRelationships || [];
+  };
+  
+  /**
+   * Set the discussions
+   * 
+   * @param {Discussion[]} discussions
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.setDiscussions = function(discussions){
+    return this._setArray(discussions, 'discussions', 'addDiscussion');
+  };
+  
+  /**
+   * Add a discussion
+   * 
+   * @param {Discussion} discussion
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.addDiscussion = function(discussion){
+    return this._arrayPush(discussion, 'discussions', GedcomX.Discussion);
+  };
+  
+  /**
+   * Get the discussions
+   * 
+   * @return {Discussion[]} discussions
+   */
+  GedcomX.Root.prototype.getDiscussions = function(){
+    return this.discussions || [];
   };
   
 };

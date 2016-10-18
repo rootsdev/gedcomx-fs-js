@@ -4,6 +4,7 @@ module.exports = function(GedcomX){
   require('./ChangeInfo')(GedcomX);
   require('./ChildAndParentsRelationship')(GedcomX);
   require('./Comment')(GedcomX);
+  require('./Discussion')(GedcomX);
   require('./FeatureSet')(GedcomX);
   
   // Property extensions
