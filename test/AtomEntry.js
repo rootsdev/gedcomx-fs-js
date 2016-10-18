@@ -46,4 +46,39 @@ describe('AtomEntry property extensions', function(){
     
   });
   
+  describe('matchInfo', function(){
+    
+    var json = {
+      "matchInfo" : [ {
+        "collection" : "https://familysearch.org/platform/collections/records",
+        "status" : "http://familysearch.org/v1/Pending"
+      } ]
+    };
+  
+    it('Create with JSON', function(){
+      test(GedcomX.AtomEntry(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX.AtomEntry()
+        .addMatchInfo(
+          GedcomX.MatchInfo()
+            .setCollection(json.matchInfo[0].collection)
+            .setStatus(json.matchInfo[0].status)
+      ));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX.AtomEntry(json).toJSON(), json);
+    });
+
+    function test(entry){
+      assert.equal(entry.getMatchInfo().length, 1);
+      var match = entry.getMatchInfo()[0];
+      assert.equal(match.getCollection(), json.matchInfo[0].collection);
+      assert.equal(match.getStatus(), json.matchInfo[0].status);
+    }
+    
+  });
+  
 });

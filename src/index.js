@@ -9,6 +9,7 @@ module.exports = function(GedcomX){
   require('./Error')(GedcomX);
   require('./FeatureSet')(GedcomX);
   require('./FeedbackInfo')(GedcomX);
+  require('./MatchInfo')(GedcomX);
   
   // Property extensions
   require('./AtomEntry')(GedcomX);
