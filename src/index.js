@@ -5,10 +5,12 @@ module.exports = function(GedcomX){
   require('./ChildAndParentsRelationship')(GedcomX);
   require('./Comment')(GedcomX);
   require('./Discussion')(GedcomX);
+  require('./DiscussionReference')(GedcomX);
   require('./FeatureSet')(GedcomX);
   
   // Property extensions
-  require('./Root')(GedcomX);
   require('./AtomEntry')(GedcomX);
+  require('./Person')(GedcomX);
+  require('./Root')(GedcomX);
   
 };
