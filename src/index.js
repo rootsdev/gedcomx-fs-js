@@ -1,8 +1,6 @@
 module.exports = function(GedcomX){
   
-  // Enable extensions
-  GedcomX.enableRsExtensions();
-  GedcomX.enableRecordsExtensions();
+  // Enable extensions. Atom extensions depend on RS and Records thus they are also enabled
   GedcomX.enableAtomExtensions();
   
   // New data types
@@ -16,6 +14,8 @@ module.exports = function(GedcomX){
   require('./FeedbackInfo')(GedcomX);
   require('./MatchInfo')(GedcomX);
   require('./SearchInfo')(GedcomX);
+  require('./SourceReference')(GedcomX);
+  require('./Tag')(GedcomX);
   
   // Property extensions
   require('./AtomEntry')(GedcomX);
