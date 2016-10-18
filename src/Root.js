@@ -4,7 +4,7 @@
 module.exports = function(GedcomX){
   
   // Extend serialization properties
-  GedcomX.Root.jsonProps.push('features','childAndParentsRelationships', 'discussions');
+  GedcomX.Root.jsonProps.push('features','childAndParentsRelationships', 'discussions', 'feedbackInfo');
   
   // Override init() so that we can deserialize normalized values
   var oldInit = GedcomX.Root.prototype.init;
@@ -14,6 +14,7 @@ module.exports = function(GedcomX){
       this.setFeatures(json.features);
       this.setChildAndParentsRelationships(json.childAndParentsRelationships);
       this.setDiscussions(json.discussions);
+      this.setFeedbackInfo(json.feedbackInfo);
     }
   };
   
@@ -102,6 +103,35 @@ module.exports = function(GedcomX){
    */
   GedcomX.Root.prototype.getDiscussions = function(){
     return this.discussions || [];
+  };
+  
+  /**
+   * Set the feedback info
+   * 
+   * @param {FeedbackInfo[]} feedbackInfo
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.setFeedbackInfo = function(feedbackInfo){
+    return this._setArray(feedbackInfo, 'feedbackInfo', 'addFeedbackInfo');
+  };
+  
+  /**
+   * Add a feedback info
+   * 
+   * @param {FeedbackInfo} feedbackInfo
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.addFeedbackInfo = function(feedbackInfo){
+    return this._arrayPush(feedbackInfo, 'feedbackInfo', GedcomX.FeedbackInfo);
+  };
+  
+  /**
+   * Get the feedback info
+   * 
+   * @return {FeedbackInfo[]} feedbackInfo
+   */
+  GedcomX.Root.prototype.getFeedbackInfo = function(){
+    return this.feedbackInfo || [];
   };
   
 };

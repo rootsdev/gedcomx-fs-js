@@ -8,6 +8,7 @@ module.exports = function(GedcomX){
   require('./DiscussionReference')(GedcomX);
   require('./Error')(GedcomX);
   require('./FeatureSet')(GedcomX);
+  require('./FeedbackInfo')(GedcomX);
   
   // Property extensions
   require('./AtomEntry')(GedcomX);
