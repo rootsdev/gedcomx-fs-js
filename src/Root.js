@@ -1,5 +1,5 @@
 /**
- * Records extensions to Root
+ * Extensions to Root
  */
 module.exports = function(GedcomX){
   

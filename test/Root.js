@@ -1,7 +1,7 @@
 var assert = require('chai').assert,
     GedcomX = require('gedcomx-js');
 
-describe('GedcomX property extensions', function(){
+describe('Root GedcomX property extensions', function(){
   
   describe('features', function(){
     
