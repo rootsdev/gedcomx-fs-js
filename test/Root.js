@@ -45,4 +45,54 @@ describe('Root GedcomX property extensions', function(){
     
   });
   
+  describe('childAndParentRelationships', function(){
+    
+    var json = {
+      childAndParentsRelationships: [
+        {
+          "id" : "PPP0-PP0",
+          "father" : {
+            "resource" : "#PPP0-MP1",
+            "resourceId" : "PPP0-MP1"
+          },
+          "child" : {
+            "resource" : "https://familysearch.org/platform/tree/persons/PPP0-PP3",
+            "resourceId" : "PPP0-PP3"
+          },
+          "fatherFacts" : [ {
+            "type" : "http://gedcomx.org/AdoptiveParent"
+          } ]
+        }
+      ]
+    };
+  
+    it('Create with JSON', function(){
+      test(GedcomX(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX().addChildAndParentsRelationship(
+        GedcomX.ChildAndParentsRelationship()
+          .setId(json.childAndParentsRelationships[0].id)
+          .setFather(json.childAndParentsRelationships[0].father)
+          .setChild(json.childAndParentsRelationships[0].child)
+          .setFatherFacts(json.childAndParentsRelationships[0].fatherFacts)
+      ));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX(json).toJSON(), json);
+    });
+    
+    function test(gedx){
+      assert.equal(gedx.getChildAndParentsRelationships().length, 1);
+      var capr = gedx.getChildAndParentsRelationships()[0];
+      assert.equal(capr.getId(), json.childAndParentsRelationships[0].id);
+      assert.deepEqual(capr.getFather().toJSON(), json.childAndParentsRelationships[0].father);
+      assert.deepEqual(capr.getChild().toJSON(), json.childAndParentsRelationships[0].child);
+      assert.deepEqual(capr.getFatherFacts()[0].toJSON(), json.childAndParentsRelationships[0].fatherFacts[0]);
+    }
+    
+  });
+  
 });
