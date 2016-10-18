@@ -6,6 +6,7 @@ module.exports = function(GedcomX){
   require('./Comment')(GedcomX);
   require('./Discussion')(GedcomX);
   require('./DiscussionReference')(GedcomX);
+  require('./Error')(GedcomX);
   require('./FeatureSet')(GedcomX);
   
   // Property extensions
