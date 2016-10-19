@@ -19,6 +19,9 @@ module.exports = function(GedcomX){
   /**
    * Set the change info
    * 
+   * @function setChangeInfo
+   * @instance
+   * @memberof AtomEntry
    * @param {ChangeInfo[]} changeInfo
    * @return {AtomEntry} this
    */
@@ -29,6 +32,9 @@ module.exports = function(GedcomX){
   /**
    * Add a change info
    * 
+   * @function addChangeInfo
+   * @instance
+   * @memberof AtomEntry
    * @param {ChangeInfo} changeInfo
    * @return {AtomEntry} this
    */
@@ -39,6 +45,9 @@ module.exports = function(GedcomX){
   /**
    * Get the change info
    * 
+   * @function getChangeInfo
+   * @instance
+   * @memberof AtomEntry
    * @return {ChangeInfo[]} changeInfo
    */
   GedcomX.AtomEntry.prototype.getChangeInfo = function(){
@@ -48,6 +57,9 @@ module.exports = function(GedcomX){
   /**
    * Set the match info
    * 
+   * @function setMatchInfo
+   * @instance
+   * @memberof AtomEntry
    * @param {MatchInfo[]} matchInfo
    * @return {AtomEntry} this
    */
@@ -58,6 +70,9 @@ module.exports = function(GedcomX){
   /**
    * Add a match info
    * 
+   * @function addMatchInfo
+   * @instance
+   * @memberof AtomEntry
    * @param {MatchInfo} matchInfo
    * @return {AtomEntry} this
    */
@@ -68,6 +83,9 @@ module.exports = function(GedcomX){
   /**
    * Get the match info
    * 
+   * @function getMatchInfo
+   * @instance
+   * @memberof AtomEntry
    * @return {MatchInfo[]} matchInfo
    */
   GedcomX.AtomEntry.prototype.getMatchInfo = function(){

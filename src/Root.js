@@ -25,6 +25,9 @@ module.exports = function(GedcomX){
   /**
    * Set the features
    * 
+   * @function setFeatures
+   * @instance
+   * @memberof Root
    * @param {FeatureSet[]} features
    * @return {Root} this
    */
@@ -35,6 +38,9 @@ module.exports = function(GedcomX){
   /**
    * Add a feature
    * 
+   * @function addFeature
+   * @instance
+   * @memberof Root
    * @param {FeatureSet} feature
    * @return {Root} this
    */
@@ -45,6 +51,9 @@ module.exports = function(GedcomX){
   /**
    * Get the features
    * 
+   * @function getFeatures
+   * @instance
+   * @memberof Root
    * @return {FeatureSet[]} features
    */
   GedcomX.Root.prototype.getFeatures = function(){
@@ -54,6 +63,9 @@ module.exports = function(GedcomX){
   /**
    * Set the child and parents relationships
    * 
+   * @function setChildAndParentsRelationships
+   * @instance
+   * @memberof Root
    * @param {ChildAndParentsRelationship[]} childAndParentRelationships
    * @return {Root} this
    */
@@ -64,6 +76,9 @@ module.exports = function(GedcomX){
   /**
    * Add a child and parents relationship
    * 
+   * @function addChildAndParentsRelationship
+   * @instance
+   * @memberof Root
    * @param {ChildAndParentsRelationship} childAndParentsRelationship
    * @return {Root} this
    */
@@ -74,6 +89,9 @@ module.exports = function(GedcomX){
   /**
    * Get the child and parent relationships
    * 
+   * @function getChildAndParentsRelationships
+   * @instance
+   * @memberof Root
    * @return {ChildAndParentsRelationship[]}
    */
   GedcomX.Root.prototype.getChildAndParentsRelationships = function(){
@@ -83,6 +101,9 @@ module.exports = function(GedcomX){
   /**
    * Set the discussions
    * 
+   * @function setDiscussions
+   * @instance
+   * @memberof Root
    * @param {Discussion[]} discussions
    * @return {Root} this
    */
@@ -93,6 +114,9 @@ module.exports = function(GedcomX){
   /**
    * Add a discussion
    * 
+   * @function addDiscussion
+   * @instance
+   * @memberof Root
    * @param {Discussion} discussion
    * @return {Root} this
    */
@@ -103,6 +127,9 @@ module.exports = function(GedcomX){
   /**
    * Get the discussions
    * 
+   * @function getDiscussions
+   * @instance
+   * @memberof Root
    * @return {Discussion[]} discussions
    */
   GedcomX.Root.prototype.getDiscussions = function(){
@@ -112,6 +139,9 @@ module.exports = function(GedcomX){
   /**
    * Set the feedback info
    * 
+   * @function setFeedbackInfo
+   * @instance
+   * @memberof Root
    * @param {FeedbackInfo[]} feedbackInfo
    * @return {Root} this
    */
@@ -122,6 +152,9 @@ module.exports = function(GedcomX){
   /**
    * Add a feedback info
    * 
+   * @function addFeedbackInfo
+   * @instance
+   * @memberof Root
    * @param {FeedbackInfo} feedbackInfo
    * @return {Root} this
    */
@@ -132,6 +165,9 @@ module.exports = function(GedcomX){
   /**
    * Get the feedback info
    * 
+   * @function getFeedbackInfo
+   * @instance
+   * @memberof Root
    * @return {FeedbackInfo[]} feedbackInfo
    */
   GedcomX.Root.prototype.getFeedbackInfo = function(){
@@ -141,6 +177,9 @@ module.exports = function(GedcomX){
   /**
    * Set the users
    * 
+   * @function setUsers
+   * @instance
+   * @memberof Root
    * @param {User[]} users
    * @return {Root} this
    */
@@ -151,6 +190,9 @@ module.exports = function(GedcomX){
   /**
    * Add a user
    * 
+   * @function addUser
+   * @instance
+   * @memberof Root
    * @param {User} user
    * @return {Root} this
    */
@@ -161,6 +203,9 @@ module.exports = function(GedcomX){
   /**
    * Get the users
    * 
+   * @function getUsers
+   * @instance
+   * @memberof Root
    * @return {User[]} users
    */
   GedcomX.Root.prototype.getUsers = function(){
@@ -170,6 +215,9 @@ module.exports = function(GedcomX){
   /**
    * Set the merge analyses
    * 
+   * @function setMergeAnalyses
+   * @instance
+   * @memberof Root
    * @param {MergeAnalysis[]} mergeAnalyses
    * @return {Root} this
    */
@@ -180,6 +228,9 @@ module.exports = function(GedcomX){
   /**
    * Add a merge analysis
    * 
+   * @function addMergeAnalysis
+   * @instance
+   * @memberof Root
    * @param {MergeAnalysis} mergeAnalysis
    * @return {Root} this
    */
@@ -190,6 +241,9 @@ module.exports = function(GedcomX){
   /**
    * Get the merge analyses
    * 
+   * @function getMergeAnalyses
+   * @instance
+   * @memberof Root
    * @return {MergeAnalysis[]}
    */
   GedcomX.Root.prototype.getMergeAnalyses = function(){
@@ -199,6 +253,9 @@ module.exports = function(GedcomX){
   /**
    * Set the merges
    * 
+   * @function setMerges
+   * @instance
+   * @memberof Root
    * @param {Merge[]}
    * @return {Root} this
    */
@@ -209,6 +266,9 @@ module.exports = function(GedcomX){
   /**
    * Add a merge
    * 
+   * @function addMerge
+   * @instance
+   * @memberof Root
    * @param {Merge}
    * @return {Root} this
    */
@@ -219,6 +279,9 @@ module.exports = function(GedcomX){
   /**
    * Get the merges
    * 
+   * @function getMerges
+   * @instance
+   * @memberof Root
    * @return {Merge[]}
    */
   GedcomX.Root.prototype.getMerges = function(){

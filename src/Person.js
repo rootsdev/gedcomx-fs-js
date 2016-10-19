@@ -18,6 +18,9 @@ module.exports = function(GedcomX){
   /**
    * Set the discussion references
    * 
+   * @function setDiscussionReferences
+   * @instance
+   * @memberof Person
    * @param {DiscussionReference[]} discussionReferences
    * @return {Person} this
    */
@@ -28,6 +31,9 @@ module.exports = function(GedcomX){
   /**
    * Add a discussion reference
    * 
+   * @function addDiscussionReference
+   * @instance
+   * @memberof Person
    * @param {DiscussionReference} discussionReference
    * @return {Person} this
    */
@@ -38,6 +44,9 @@ module.exports = function(GedcomX){
   /**
    * Get the discussion references
    * 
+   * @function getDiscussionReferences
+   * @instance
+   * @memberof Person
    * @return {DiscussionReference[]} discussionReferences
    */
   GedcomX.Person.prototype.getDiscussionReferences = function(){
