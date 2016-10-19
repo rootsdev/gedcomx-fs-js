@@ -235,4 +235,104 @@ describe('Root GedcomX property extensions', function(){
     
   });
   
+  describe('mergeAnalyses', function(){
+    
+    var json = {
+      "mergeAnalyses" : [ {
+        "survivorResources" : [ {
+          "resource" : "https://familysearch.org/platform/tree/persons/P12-345/conclusions/YZAB"
+        }, {
+          "resource" : "https://familysearch.org/platform/tree/persons/P12-345/conclusions/CDEF"
+        } ],
+        "duplicateResources" : [ {
+          "resource" : "https://familysearch.org/platform/tree/persons/P54-321/conclusions/QRST"
+        }, {
+          "resource" : "https://familysearch.org/platform/tree/persons/P54-321/conclusions/UVWX"
+        } ],
+        "conflictingResources" : [ {
+          "survivorResource" : {
+            "resource" : "https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD"
+          },
+          "duplicateResource" : {
+            "resource" : "https://familysearch.org/platform/tree/persons/P54-321/conclusions/EFGH"
+          }
+        } ],
+        "survivor" : {
+          "resource" : "https://familysearch.org/platform/tree/persons/P12-345"
+        },
+        "duplicate" : {
+          "resource" : "https://familysearch.org/platform/tree/persons/P54-321"
+        }
+      } ]
+    };
+    
+    it('Create with JSON', function(){
+      test(GedcomX(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX().addMergeAnalysis(
+        GedcomX.MergeAnalysis()
+          .addSurvivorResource(json.mergeAnalyses[0].survivorResources[0])
+          .addDuplicateResource(json.mergeAnalyses[0].duplicateResources[0])
+          .addConflictingResource(json.mergeAnalyses[0].conflictingResources[0])
+          .setSurvivor(json.mergeAnalyses[0].survivor)
+          .setDuplicate(json.mergeAnalyses[0].duplicate)
+      ));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX(json).toJSON(), json);
+    });
+    
+    function test(gedx){
+      assert.equal(gedx.getMergeAnalyses().length, 1);
+      var analysis = gedx.getMergeAnalyses()[0];
+      assert.deepEqual(analysis.getSurvivorResources()[0].toJSON(), json.mergeAnalyses[0].survivorResources[0]);
+      assert.deepEqual(analysis.getDuplicateResources()[0].toJSON(), json.mergeAnalyses[0].duplicateResources[0]);
+      assert.deepEqual(analysis.getConflictingResources()[0].toJSON(), json.mergeAnalyses[0].conflictingResources[0]);
+      assert.deepEqual(analysis.getSurvivor().toJSON(), json.mergeAnalyses[0].survivor);
+      assert.deepEqual(analysis.getDuplicate().toJSON(), json.mergeAnalyses[0].duplicate);
+    }
+    
+  });
+  
+  describe('merges', function(){
+    
+    var json = {
+      "merges" : [ {
+        "resourcesToDelete" : [ {
+          "resource" : "https://familysearch.org/platform/tree/persons/P12-345/conclusions/ABCD"
+        } ],
+        "resourcesToCopy" : [ {
+          "resource" : "https://familysearch.org/platform/tree/persons/P54-321/conclusions/IJKL"
+        } ]
+      } ]
+    };
+    
+    it('Create with JSON', function(){
+      test(GedcomX(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX().addMerge(
+        GedcomX.Merge()
+          .addResourceToDelete(json.merges[0].resourcesToDelete[0])
+          .addResourceToCopy(json.merges[0].resourcesToCopy[0])
+      ));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX(json).toJSON(), json);
+    });
+    
+    function test(gedx){
+      assert.equal(gedx.getMerges().length, 1);
+      var merge = gedx.getMerges()[0];
+      assert.deepEqual(merge.getResourcesToDelete()[0].toJSON(), json.merges[0].resourcesToDelete[0]);
+      assert.deepEqual(merge.getResourcesToCopy()[0].toJSON(), json.merges[0].resourcesToCopy[0]);
+    }
+    
+  });
+  
 });

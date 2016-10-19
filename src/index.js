@@ -13,6 +13,9 @@ module.exports = function(GedcomX){
   require('./FeatureSet')(GedcomX);
   require('./FeedbackInfo')(GedcomX);
   require('./MatchInfo')(GedcomX);
+  require('./Merge')(GedcomX);
+  require('./MergeAnalysis')(GedcomX);
+  require('./MergeConflict')(GedcomX);
   require('./SearchInfo')(GedcomX);
   require('./SourceReference')(GedcomX);
   require('./Tag')(GedcomX);

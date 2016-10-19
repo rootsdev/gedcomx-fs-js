@@ -5,7 +5,7 @@ module.exports = function(GedcomX){
   
   // Extend serialization properties
   GedcomX.Root.jsonProps.push('features','childAndParentsRelationships', 
-    'discussions', 'feedbackInfo', 'users');
+    'discussions', 'feedbackInfo', 'users', 'mergeAnalyses', 'merges');
   
   // Override init() so that we can deserialize normalized values
   var oldInit = GedcomX.Root.prototype.init;
@@ -17,6 +17,8 @@ module.exports = function(GedcomX){
       this.setDiscussions(json.discussions);
       this.setFeedbackInfo(json.feedbackInfo);
       this.setUsers(json.users);
+      this.setMergeAnalyses(json.mergeAnalyses);
+      this.setMerges(json.merges);
     }
   };
   
@@ -163,6 +165,64 @@ module.exports = function(GedcomX){
    */
   GedcomX.Root.prototype.getUsers = function(){
     return this.users || [];
+  };
+  
+  /**
+   * Set the merge analyses
+   * 
+   * @param {MergeAnalysis[]} mergeAnalyses
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.setMergeAnalyses = function(mergeAnalyses){
+    return this._setArray(mergeAnalyses, 'mergeAnalyses', 'addMergeAnalysis');
+  };
+  
+  /**
+   * Add a merge analysis
+   * 
+   * @param {MergeAnalysis} mergeAnalysis
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.addMergeAnalysis = function(mergeAnalysis){
+    return this._arrayPush(mergeAnalysis, 'mergeAnalyses', GedcomX.MergeAnalysis);
+  };
+  
+  /**
+   * Get the merge analyses
+   * 
+   * @return {MergeAnalysis[]}
+   */
+  GedcomX.Root.prototype.getMergeAnalyses = function(){
+    return this.mergeAnalyses || [];
+  };
+  
+  /**
+   * Set the merges
+   * 
+   * @param {Merge[]}
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.setMerges = function(merges){
+    return this._setArray(merges, 'merges', 'addMerge');
+  };
+  
+  /**
+   * Add a merge
+   * 
+   * @param {Merge}
+   * @return {Root} this
+   */
+  GedcomX.Root.prototype.addMerge = function(merge){
+    return this._arrayPush(merge, 'merges', GedcomX.Merge);
+  };
+  
+  /**
+   * Get the merges
+   * 
+   * @return {Merge[]}
+   */
+  GedcomX.Root.prototype.getMerges = function(){
+    return this.merges || [];
   };
   
 };
