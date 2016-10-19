@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * FamilySearch user.
    * 
-   * @class
+   * @class User
    * @extends ExtensibleData
    * @param {Object} [json]
    */ 

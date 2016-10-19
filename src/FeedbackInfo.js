@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * Information about feedback for places.
    * 
-   * @class
+   * @class FeedbackInfo
    * @extends Base
    * @param {Object} [json]
    */ 

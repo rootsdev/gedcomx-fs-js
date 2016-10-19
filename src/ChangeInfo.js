@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * Information about a change.
    * 
-   * @class
+   * @class ChangeInfo
    * @extends Base
    * @param {Object} [json]
    */ 

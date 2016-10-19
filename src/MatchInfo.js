@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * Information about a match.
    * 
-   * @class
+   * @class MatchInfo
    * @extends Base
    * @param {Object} [json]
    */ 

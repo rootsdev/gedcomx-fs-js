@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * Comment on a discussion
    * 
-   * @class
+   * @class Comment
    * @extends ExtensibleData
    * @param {Object} [json]
    */ 

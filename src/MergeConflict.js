@@ -1,7 +1,7 @@
 module.exports = function(GedcomX){
   
   /**
-   * @class
+   * @class MergeConflict
    * @extends Base
    * @param {Object} [json]
    */ 

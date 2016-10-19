@@ -1,7 +1,7 @@
 module.exports = function(GedcomX){
   
   /**
-   * @class
+   * @class MergeAnalysis
    * @extends Base
    * @param {Object} [json]
    */ 

@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * A common representation of an error on the FamilySearch platform.
    * 
-   * @class
+   * @class Error
    * @extends Base
    * @param {Object} [json]
    */ 

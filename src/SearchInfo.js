@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * Information about a search.
    * 
-   * @class
+   * @class SearchInfo
    * @extends Base
    * @param {Object} [json]
    */ 

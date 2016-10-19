@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * A description of a FamilySearch feature.
    * 
-   * @class
+   * @class FeatureSet
    * @extends Base
    * @param {Object} [json]
    */ 

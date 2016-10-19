@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * The FamilySearch-proprietary model for a relationship between a child and a pair of parents.
    * 
-   * @class
+   * @class ChildAndParentsRelationship
    * @extends Subject
    * @param {Object} [json]
    */ 

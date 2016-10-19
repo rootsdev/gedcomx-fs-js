@@ -3,7 +3,7 @@ module.exports = function(GedcomX){
   /**
    * A tag in the FamilySearch system.
    * 
-   * @class
+   * @class Tag
    * @extends Base
    * @param {Object} [json]
    */ 
