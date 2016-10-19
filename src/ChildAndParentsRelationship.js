@@ -37,6 +37,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof ChildAndParentsRelationship
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -47,6 +49,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {Object}
    * @return ChildAndParentsRelationship this
    */
@@ -67,6 +70,7 @@ module.exports = function(GedcomX){
   /**
    * Get the father
    * 
+   * @memberof ChildAndParentsRelationship
    * @returns {ResourceReference} father
    */
   ChildAndParentsRelationship.prototype.getFather = function(){
@@ -76,6 +80,7 @@ module.exports = function(GedcomX){
   /**
    * Set the father
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {ResourceReference} father
    * @returns {ChildAndParentsRelationship} this
    */
@@ -89,6 +94,7 @@ module.exports = function(GedcomX){
   /**
    * Get the mother
    * 
+   * @memberof ChildAndParentsRelationship
    * @returns {ResourceReference} mother
    */
   ChildAndParentsRelationship.prototype.getMother = function(){
@@ -98,6 +104,7 @@ module.exports = function(GedcomX){
   /**
    * Set the mother
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {ResourceReference} mother
    * @returns {ChildAndParentsRelationship} this
    */
@@ -111,6 +118,7 @@ module.exports = function(GedcomX){
   /**
    * Get the child
    * 
+   * @memberof ChildAndParentsRelationship
    * @returns {ResourceReference} child
    */
   ChildAndParentsRelationship.prototype.getChild = function(){
@@ -120,6 +128,7 @@ module.exports = function(GedcomX){
   /**
    * Set the child
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {ResourceReference} child
    * @returns {ChildAndParentsRelationship} this
    */
@@ -133,6 +142,7 @@ module.exports = function(GedcomX){
   /**
    * Get the fatherFacts
    * 
+   * @memberof ChildAndParentsRelationship
    * @return {Fact[]}
    */
   ChildAndParentsRelationship.prototype.getFatherFacts = function(){
@@ -142,6 +152,7 @@ module.exports = function(GedcomX){
   /**
    * Set the fatherFacts
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {Fact[]} fatherFacts
    * @returns {ChildAndParentsRelationship} this
    */
@@ -152,6 +163,7 @@ module.exports = function(GedcomX){
   /**
    * Add a fatherFact
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {Fact} fatherFact
    * @returns {ChildAndParentsRelationship} this
    */
@@ -162,6 +174,7 @@ module.exports = function(GedcomX){
   /**
    * Get the motherFacts
    * 
+   * @memberof ChildAndParentsRelationship
    * @return {Fact[]}
    */
   ChildAndParentsRelationship.prototype.getMotherFacts = function(){
@@ -171,6 +184,7 @@ module.exports = function(GedcomX){
   /**
    * Set the motherFacts
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {Fact[]} motherFacts
    * @returns {ChildAndParentsRelationship} this
    */
@@ -181,6 +195,7 @@ module.exports = function(GedcomX){
   /**
    * Add a motherFact
    * 
+   * @memberof ChildAndParentsRelationship
    * @param {Fact} motherFact
    * @returns {ChildAndParentsRelationship} this
    */
@@ -191,6 +206,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof ChildAndParentsRelationship
    * @return {Object} JSON object
    */
   ChildAndParentsRelationship.prototype.toJSON = function(){

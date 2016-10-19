@@ -49,6 +49,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof User
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -59,6 +61,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof User
    * @param {Object}
    * @return User this
    */
@@ -91,6 +94,7 @@ module.exports = function(GedcomX){
   /**
    * Get the alternateEmail
    * 
+   * @memberof User
    * @returns {String} alternateEmail
    */
   User.prototype.getAlternateEmail = function(){
@@ -100,6 +104,7 @@ module.exports = function(GedcomX){
   /**
    * Set the alternateEmail
    * 
+   * @memberof User
    * @param {String} alternateEmail
    * @returns {User} this
    */
@@ -111,6 +116,7 @@ module.exports = function(GedcomX){
   /**
    * Get the birthDate
    * 
+   * @memberof User
    * @returns {String} birthDate
    */
   User.prototype.getBirthDate = function(){
@@ -120,6 +126,7 @@ module.exports = function(GedcomX){
   /**
    * Set the birthDate
    * 
+   * @memberof User
    * @param {String} birthDate
    * @returns {User} this
    */
@@ -131,6 +138,7 @@ module.exports = function(GedcomX){
   /**
    * Get the contactName
    * 
+   * @memberof User
    * @returns {String} contactName
    */
   User.prototype.getContactName = function(){
@@ -140,6 +148,7 @@ module.exports = function(GedcomX){
   /**
    * Set the contactName
    * 
+   * @memberof User
    * @param {String} contactName
    * @returns {User} this
    */
@@ -151,6 +160,7 @@ module.exports = function(GedcomX){
   /**
    * Get the country
    * 
+   * @memberof User
    * @returns {String} country
    */
   User.prototype.getCountry = function(){
@@ -160,6 +170,7 @@ module.exports = function(GedcomX){
   /**
    * Set the country
    * 
+   * @memberof User
    * @param {String} country
    * @returns {User} this
    */
@@ -171,6 +182,7 @@ module.exports = function(GedcomX){
   /**
    * Get the displayName
    * 
+   * @memberof User
    * @returns {String} displayName
    */
   User.prototype.getDisplayName = function(){
@@ -180,6 +192,7 @@ module.exports = function(GedcomX){
   /**
    * Set the displayName
    * 
+   * @memberof User
    * @param {String} displayName
    * @returns {User} this
    */
@@ -191,6 +204,7 @@ module.exports = function(GedcomX){
   /**
    * Get the email
    * 
+   * @memberof User
    * @returns {String} email
    */
   User.prototype.getEmail = function(){
@@ -200,6 +214,7 @@ module.exports = function(GedcomX){
   /**
    * Set the email
    * 
+   * @memberof User
    * @param {String} email
    * @returns {User} this
    */
@@ -211,6 +226,7 @@ module.exports = function(GedcomX){
   /**
    * Get the familyName
    * 
+   * @memberof User
    * @returns {String} familyName
    */
   User.prototype.getFamilyName = function(){
@@ -220,6 +236,7 @@ module.exports = function(GedcomX){
   /**
    * Set the familyName
    * 
+   * @memberof User
    * @param {String} familyName
    * @returns {User} this
    */
@@ -231,6 +248,7 @@ module.exports = function(GedcomX){
   /**
    * Get the fullName
    * 
+   * @memberof User
    * @returns {String} fullName
    */
   User.prototype.getFullName = function(){
@@ -240,6 +258,7 @@ module.exports = function(GedcomX){
   /**
    * Set the fullName
    * 
+   * @memberof User
    * @param {String} fullName
    * @returns {User} this
    */
@@ -251,6 +270,7 @@ module.exports = function(GedcomX){
   /**
    * Get the gender
    * 
+   * @memberof User
    * @returns {String} gender
    */
   User.prototype.getGender = function(){
@@ -260,6 +280,7 @@ module.exports = function(GedcomX){
   /**
    * Set the gender
    * 
+   * @memberof User
    * @param {String} gender
    * @returns {User} this
    */
@@ -271,6 +292,7 @@ module.exports = function(GedcomX){
   /**
    * Get the givenName
    * 
+   * @memberof User
    * @returns {String} givenName
    */
   User.prototype.getGivenName = function(){
@@ -280,6 +302,7 @@ module.exports = function(GedcomX){
   /**
    * Set the givenName
    * 
+   * @memberof User
    * @param {String} givenName
    * @returns {User} this
    */
@@ -291,6 +314,7 @@ module.exports = function(GedcomX){
   /**
    * Get the helperAccessPin
    * 
+   * @memberof User
    * @returns {String} helperAccessPin
    */
   User.prototype.getHelperAccessPin = function(){
@@ -300,6 +324,7 @@ module.exports = function(GedcomX){
   /**
    * Set the helperAccessPin
    * 
+   * @memberof User
    * @param {String} helperAccessPin
    * @returns {User} this
    */
@@ -311,6 +336,7 @@ module.exports = function(GedcomX){
   /**
    * Get the mailingAddress
    * 
+   * @memberof User
    * @returns {String} mailingAddress
    */
   User.prototype.getMailingAddress = function(){
@@ -320,6 +346,7 @@ module.exports = function(GedcomX){
   /**
    * Set the mailingAddress
    * 
+   * @memberof User
    * @param {String} mailingAddress
    * @returns {User} this
    */
@@ -331,6 +358,7 @@ module.exports = function(GedcomX){
   /**
    * Get the mobilePhoneNumber
    * 
+   * @memberof User
    * @returns {String} mobilePhoneNumber
    */
   User.prototype.getMobilePhoneNumber = function(){
@@ -340,6 +368,7 @@ module.exports = function(GedcomX){
   /**
    * Set the mobilePhoneNumber
    * 
+   * @memberof User
    * @param {String} mobilePhoneNumber
    * @returns {User} this
    */
@@ -351,6 +380,7 @@ module.exports = function(GedcomX){
   /**
    * Get the personId
    * 
+   * @memberof User
    * @returns {String} personId
    */
   User.prototype.getPersonId = function(){
@@ -360,6 +390,7 @@ module.exports = function(GedcomX){
   /**
    * Set the personId
    * 
+   * @memberof User
    * @param {String} personId
    * @returns {User} this
    */
@@ -371,6 +402,7 @@ module.exports = function(GedcomX){
   /**
    * Get the phoneNumber
    * 
+   * @memberof User
    * @returns {String} phoneNumber
    */
   User.prototype.getPhoneNumber = function(){
@@ -380,6 +412,7 @@ module.exports = function(GedcomX){
   /**
    * Set the phoneNumber
    * 
+   * @memberof User
    * @param {String} phoneNumber
    * @returns {User} this
    */
@@ -391,6 +424,7 @@ module.exports = function(GedcomX){
   /**
    * Get the preferredLanguage
    * 
+   * @memberof User
    * @returns {String} preferredLanguage
    */
   User.prototype.getPreferredLanguage = function(){
@@ -400,6 +434,7 @@ module.exports = function(GedcomX){
   /**
    * Set the preferredLanguage
    * 
+   * @memberof User
    * @param {String} preferredLanguage
    * @returns {User} this
    */
@@ -411,6 +446,7 @@ module.exports = function(GedcomX){
   /**
    * Get the treeUserId
    * 
+   * @memberof User
    * @returns {String} treeUserId
    */
   User.prototype.getTreeUserId = function(){
@@ -420,6 +456,7 @@ module.exports = function(GedcomX){
   /**
    * Set the treeUserId
    * 
+   * @memberof User
    * @param {String} treeUserId
    * @returns {User} this
    */
@@ -431,6 +468,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof User
    * @return {Object} JSON object
    */
   User.prototype.toJSON = function(){

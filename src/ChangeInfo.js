@@ -40,6 +40,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof ChangeInfo
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -50,6 +52,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof ChangeInfo
    * @param {Object}
    * @return ChangeInfo this
    */
@@ -73,6 +76,7 @@ module.exports = function(GedcomX){
   /**
    * Get the objectModifier
    * 
+   * @memberof ChangeInfo
    * @returns {String} objectModifier
    */
   ChangeInfo.prototype.getObjectModifier = function(){
@@ -82,6 +86,7 @@ module.exports = function(GedcomX){
   /**
    * Set the objectModifier
    * 
+   * @memberof ChangeInfo
    * @param {String} objectModifier
    * @returns {ChangeInfo} this
    */
@@ -93,6 +98,7 @@ module.exports = function(GedcomX){
   /**
    * Get the operation
    * 
+   * @memberof ChangeInfo
    * @returns {String} operation
    */
   ChangeInfo.prototype.getOperation = function(){
@@ -102,6 +108,7 @@ module.exports = function(GedcomX){
   /**
    * Set the operation
    * 
+   * @memberof ChangeInfo
    * @param {String} operation
    * @returns {ChangeInfo} this
    */
@@ -113,6 +120,7 @@ module.exports = function(GedcomX){
   /**
    * Get the reason
    * 
+   * @memberof ChangeInfo
    * @returns {String} reason
    */
   ChangeInfo.prototype.getReason = function(){
@@ -122,6 +130,7 @@ module.exports = function(GedcomX){
   /**
    * Set the reason
    * 
+   * @memberof ChangeInfo
    * @param {String} reason
    * @returns {ChangeInfo} this
    */
@@ -133,6 +142,7 @@ module.exports = function(GedcomX){
   /**
    * Get the objectType
    * 
+   * @memberof ChangeInfo
    * @returns {String} objectType
    */
   ChangeInfo.prototype.getObjectType = function(){
@@ -142,6 +152,7 @@ module.exports = function(GedcomX){
   /**
    * Set the objectType
    * 
+   * @memberof ChangeInfo
    * @param {String} objectType
    * @returns {ChangeInfo} this
    */
@@ -153,6 +164,7 @@ module.exports = function(GedcomX){
   /**
    * Get the original
    * 
+   * @memberof ChangeInfo
    * @returns {ResourceReference} original
    */
   ChangeInfo.prototype.getOriginal = function(){
@@ -162,6 +174,7 @@ module.exports = function(GedcomX){
   /**
    * Set the original
    * 
+   * @memberof ChangeInfo
    * @param {ResourceReference} original
    * @returns {ChangeInfo} this
    */
@@ -175,6 +188,7 @@ module.exports = function(GedcomX){
   /**
    * Get the parent
    * 
+   * @memberof ChangeInfo
    * @returns {ResourceReference} parent
    */
   ChangeInfo.prototype.getParent = function(){
@@ -184,6 +198,7 @@ module.exports = function(GedcomX){
   /**
    * Set the parent
    * 
+   * @memberof ChangeInfo
    * @param {ResourceReference} parent
    * @returns {ChangeInfo} this
    */
@@ -197,6 +212,7 @@ module.exports = function(GedcomX){
   /**
    * Get the removed
    * 
+   * @memberof ChangeInfo
    * @returns {ResourceReference} removed
    */
   ChangeInfo.prototype.getRemoved = function(){
@@ -206,6 +222,7 @@ module.exports = function(GedcomX){
   /**
    * Set the removed
    * 
+   * @memberof ChangeInfo
    * @param {ResourceReference} removed
    * @returns {ChangeInfo} this
    */
@@ -219,6 +236,7 @@ module.exports = function(GedcomX){
   /**
    * Get the resulting
    * 
+   * @memberof ChangeInfo
    * @returns {ResourceReference} resulting
    */
   ChangeInfo.prototype.getResulting = function(){
@@ -228,6 +246,7 @@ module.exports = function(GedcomX){
   /**
    * Set the resulting
    * 
+   * @memberof ChangeInfo
    * @param {ResourceReference} resulting
    * @returns {ChangeInfo} this
    */
@@ -241,6 +260,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof ChangeInfo
    * @return {Object} JSON object
    */
   ChangeInfo.prototype.toJSON = function(){

@@ -1,8 +1,6 @@
 module.exports = function(GedcomX){
   
   /**
-   * A reference to a discussion.
-   * 
    * @class DiscussionReference
    * @extends ExtensibleData
    * @param {Object} [json]
@@ -35,6 +33,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof DiscussionReference
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -45,6 +45,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof DiscussionReference
    * @param {Object}
    * @return DiscussionReference this
    */
@@ -63,6 +64,7 @@ module.exports = function(GedcomX){
   /**
    * Get the resource
    * 
+   * @memberof DiscussionReference
    * @returns {String} resource
    */
   DiscussionReference.prototype.getResource = function(){
@@ -72,6 +74,7 @@ module.exports = function(GedcomX){
   /**
    * Set the resource
    * 
+   * @memberof DiscussionReference
    * @param {String} resource
    * @returns {DiscussionReference} this
    */
@@ -83,6 +86,7 @@ module.exports = function(GedcomX){
   /**
    * Get the resourceId
    * 
+   * @memberof DiscussionReference
    * @returns {String} resourceId
    */
   DiscussionReference.prototype.getResourceId = function(){
@@ -92,6 +96,7 @@ module.exports = function(GedcomX){
   /**
    * Set the resourceId
    * 
+   * @memberof DiscussionReference
    * @param {String} resourceId
    * @returns {DiscussionReference} this
    */
@@ -103,6 +108,7 @@ module.exports = function(GedcomX){
   /**
    * Get the attribution
    * 
+   * @memberof DiscussionReference
    * @returns {Attribution} attribution
    */
   DiscussionReference.prototype.getAttribution = function(){
@@ -112,6 +118,7 @@ module.exports = function(GedcomX){
   /**
    * Set the attribution
    * 
+   * @memberof DiscussionReference
    * @param {Attribution} attribution
    * @returns {DiscussionReference} this
    */
@@ -125,6 +132,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof DiscussionReference
    * @return {Object} JSON object
    */
   DiscussionReference.prototype.toJSON = function(){

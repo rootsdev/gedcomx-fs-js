@@ -1,6 +1,8 @@
 module.exports = function(GedcomX){
   
   /**
+   * Class description
+   * 
    * @class Merge
    * @extends Base
    * @param {Object} [json]
@@ -32,6 +34,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof Merge
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -42,6 +46,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof Merge
    * @param {Object}
    * @return Merge this
    */
@@ -57,8 +62,9 @@ module.exports = function(GedcomX){
   };
   
   /**
-   * Get the resources that will be deleted
+   * Get the resourcesToDelete
    * 
+   * @memberof Merge
    * @return {ResourceReference[]}
    */
   Merge.prototype.getResourcesToDelete = function(){
@@ -66,8 +72,9 @@ module.exports = function(GedcomX){
   };
   
   /**
-   * Set the resources that will be deleted
+   * Set the resourcesToDelete
    * 
+   * @memberof Merge
    * @param {ResourceReference[]} resourcesToDelete
    * @returns {Merge} this
    */
@@ -76,9 +83,10 @@ module.exports = function(GedcomX){
   };
   
   /**
-   * Add a resources that will be deleted
+   * Add a resourcesToDelete
    * 
-   * @param {ResourceReference} resourcesToDelete
+   * @memberof Merge
+   * @param {ResourceReference} resourceToDelete
    * @returns {Merge} this
    */
   Merge.prototype.addResourceToDelete = function(resourceToDelete){
@@ -86,8 +94,9 @@ module.exports = function(GedcomX){
   };    
   
   /**
-   * Get the resources that will be copied
+   * Get the resourcesToCopy
    * 
+   * @memberof Merge
    * @return {ResourceReference[]}
    */
   Merge.prototype.getResourcesToCopy = function(){
@@ -95,8 +104,9 @@ module.exports = function(GedcomX){
   };
   
   /**
-   * Set the resources that will be copied
+   * Set the resourcesToCopy
    * 
+   * @memberof Merge
    * @param {ResourceReference[]} resourcesToCopy
    * @returns {Merge} this
    */
@@ -105,8 +115,9 @@ module.exports = function(GedcomX){
   };
   
   /**
-   * Add a resource that will be copied
+   * Add a resourcesToCopy
    * 
+   * @memberof Merge
    * @param {ResourceReference} resourceToCopy
    * @returns {Merge} this
    */
@@ -117,6 +128,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof Merge
    * @return {Object} JSON object
    */
   Merge.prototype.toJSON = function(){

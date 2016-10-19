@@ -33,6 +33,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof Tag
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -43,6 +45,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof Tag
    * @param {Object}
    * @return Tag this
    */
@@ -59,6 +62,7 @@ module.exports = function(GedcomX){
   /**
    * Get the resource
    * 
+   * @memberof Tag
    * @returns {String} resource
    */
   Tag.prototype.getResource = function(){
@@ -68,6 +72,7 @@ module.exports = function(GedcomX){
   /**
    * Set the resource
    * 
+   * @memberof Tag
    * @param {String} resource
    * @returns {Tag} this
    */
@@ -79,6 +84,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof Tag
    * @return {Object} JSON object
    */
   Tag.prototype.toJSON = function(){

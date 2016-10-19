@@ -1,8 +1,6 @@
 module.exports = function(GedcomX){
   
   /**
-   * Information about a match.
-   * 
    * @class MatchInfo
    * @extends Base
    * @param {Object} [json]
@@ -34,6 +32,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof MatchInfo
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -44,6 +44,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof MatchInfo
    * @param {Object}
    * @return MatchInfo this
    */
@@ -61,6 +62,7 @@ module.exports = function(GedcomX){
   /**
    * Get the status
    * 
+   * @memberof MatchInfo
    * @returns {String} status
    */
   MatchInfo.prototype.getStatus = function(){
@@ -70,6 +72,7 @@ module.exports = function(GedcomX){
   /**
    * Set the status
    * 
+   * @memberof MatchInfo
    * @param {String} status
    * @returns {MatchInfo} this
    */
@@ -81,6 +84,7 @@ module.exports = function(GedcomX){
   /**
    * Get the collection
    * 
+   * @memberof MatchInfo
    * @returns {String} collection
    */
   MatchInfo.prototype.getCollection = function(){
@@ -90,6 +94,7 @@ module.exports = function(GedcomX){
   /**
    * Set the collection
    * 
+   * @memberof MatchInfo
    * @param {String} collection
    * @returns {MatchInfo} this
    */
@@ -101,6 +106,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof MatchInfo
    * @return {Object} JSON object
    */
   MatchInfo.prototype.toJSON = function(){

@@ -1,6 +1,8 @@
 module.exports = function(GedcomX){
   
   /**
+   * Class description
+   * 
    * @class MergeConflict
    * @extends Base
    * @param {Object} [json]
@@ -32,6 +34,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof MergeConflict
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -42,6 +46,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof MergeConflict
    * @param {Object}
    * @return MergeConflict this
    */
@@ -59,6 +64,7 @@ module.exports = function(GedcomX){
   /**
    * Get the survivorResource
    * 
+   * @memberof MergeConflict
    * @returns {ResourceReference} survivorResource
    */
   MergeConflict.prototype.getSurvivorResource = function(){
@@ -68,6 +74,7 @@ module.exports = function(GedcomX){
   /**
    * Set the survivorResource
    * 
+   * @memberof MergeConflict
    * @param {ResourceReference} survivorResource
    * @returns {MergeConflict} this
    */
@@ -81,6 +88,7 @@ module.exports = function(GedcomX){
   /**
    * Get the duplicateResource
    * 
+   * @memberof MergeConflict
    * @returns {ResourceReference} duplicateResource
    */
   MergeConflict.prototype.getDuplicateResource = function(){
@@ -90,6 +98,7 @@ module.exports = function(GedcomX){
   /**
    * Set the duplicateResource
    * 
+   * @memberof MergeConflict
    * @param {ResourceReference} duplicateResource
    * @returns {MergeConflict} this
    */
@@ -103,6 +112,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof MergeConflict
    * @return {Object} JSON object
    */
   MergeConflict.prototype.toJSON = function(){

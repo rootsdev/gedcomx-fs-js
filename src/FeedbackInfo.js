@@ -36,6 +36,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof FeedbackInfo
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -46,6 +48,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof FeedbackInfo
    * @param {Object}
    * @return FeedbackInfo this
    */
@@ -65,6 +68,7 @@ module.exports = function(GedcomX){
   /**
    * Get the status
    * 
+   * @memberof FeedbackInfo
    * @returns {String} status
    */
   FeedbackInfo.prototype.getStatus = function(){
@@ -74,6 +78,7 @@ module.exports = function(GedcomX){
   /**
    * Set the status
    * 
+   * @memberof FeedbackInfo
    * @param {String} status
    * @returns {FeedbackInfo} this
    */
@@ -85,6 +90,7 @@ module.exports = function(GedcomX){
   /**
    * Get the resolution
    * 
+   * @memberof FeedbackInfo
    * @returns {String} resolution
    */
   FeedbackInfo.prototype.getResolution = function(){
@@ -94,6 +100,7 @@ module.exports = function(GedcomX){
   /**
    * Set the resolution
    * 
+   * @memberof FeedbackInfo
    * @param {String} resolution
    * @returns {FeedbackInfo} this
    */
@@ -105,6 +112,7 @@ module.exports = function(GedcomX){
   /**
    * Get the details
    * 
+   * @memberof FeedbackInfo
    * @returns {String} details
    */
   FeedbackInfo.prototype.getDetails = function(){
@@ -114,6 +122,7 @@ module.exports = function(GedcomX){
   /**
    * Set the details
    * 
+   * @memberof FeedbackInfo
    * @param {String} details
    * @returns {FeedbackInfo} this
    */
@@ -125,6 +134,7 @@ module.exports = function(GedcomX){
   /**
    * Get the place
    * 
+   * @memberof FeedbackInfo
    * @returns {ResourceReference} place
    */
   FeedbackInfo.prototype.getPlace = function(){
@@ -134,6 +144,7 @@ module.exports = function(GedcomX){
   /**
    * Set the place
    * 
+   * @memberof FeedbackInfo
    * @param {ResourceReference} place
    * @returns {FeedbackInfo} this
    */
@@ -147,6 +158,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof FeedbackInfo
    * @return {Object} JSON object
    */
   FeedbackInfo.prototype.toJSON = function(){

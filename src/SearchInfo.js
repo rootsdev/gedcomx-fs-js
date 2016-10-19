@@ -34,6 +34,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof SearchInfo
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -44,6 +46,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof SearchInfo
    * @param {Object}
    * @return SearchInfo this
    */
@@ -61,6 +64,7 @@ module.exports = function(GedcomX){
   /**
    * Get the closeHits
    * 
+   * @memberof SearchInfo
    * @returns {Integer} closeHits
    */
   SearchInfo.prototype.getCloseHits = function(){
@@ -70,6 +74,7 @@ module.exports = function(GedcomX){
   /**
    * Set the closeHits
    * 
+   * @memberof SearchInfo
    * @param {Integer} closeHits
    * @returns {SearchInfo} this
    */
@@ -81,6 +86,7 @@ module.exports = function(GedcomX){
   /**
    * Get the totalHits
    * 
+   * @memberof SearchInfo
    * @returns {Integer} totalHits
    */
   SearchInfo.prototype.getTotalHits = function(){
@@ -90,6 +96,7 @@ module.exports = function(GedcomX){
   /**
    * Set the totalHits
    * 
+   * @memberof SearchInfo
    * @param {Integer} totalHits
    * @returns {SearchInfo} this
    */
@@ -101,6 +108,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof SearchInfo
    * @return {Object} JSON object
    */
   SearchInfo.prototype.toJSON = function(){

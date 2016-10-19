@@ -35,6 +35,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof Comment
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -45,6 +47,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof Comment
    * @param {Object}
    * @return Comment this
    */
@@ -63,6 +66,7 @@ module.exports = function(GedcomX){
   /**
    * Get the text
    * 
+   * @memberof Comment
    * @returns {String} text
    */
   Comment.prototype.getText = function(){
@@ -72,6 +76,7 @@ module.exports = function(GedcomX){
   /**
    * Set the text
    * 
+   * @memberof Comment
    * @param {String} text
    * @returns {Comment} this
    */
@@ -83,6 +88,7 @@ module.exports = function(GedcomX){
   /**
    * Get the created
    * 
+   * @memberof Comment
    * @returns {Date} created
    */
   Comment.prototype.getCreated = function(){
@@ -92,6 +98,7 @@ module.exports = function(GedcomX){
   /**
    * Set the created
    * 
+   * @memberof Comment
    * @param {Date|Integer} created
    * @returns {Comment} this
    */
@@ -105,6 +112,7 @@ module.exports = function(GedcomX){
   /**
    * Get the contributor
    * 
+   * @memberof Comment
    * @returns {ResourceReference} contributor
    */
   Comment.prototype.getContributor = function(){
@@ -114,6 +122,7 @@ module.exports = function(GedcomX){
   /**
    * Set the contributor
    * 
+   * @memberof Comment
    * @param {ResourceReference} contributor
    * @returns {Comment} this
    */
@@ -127,6 +136,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof Comment
    * @return {Object} JSON object
    */
   Comment.prototype.toJSON = function(){

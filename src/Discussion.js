@@ -1,8 +1,6 @@
 module.exports = function(GedcomX){
   
   /**
-   * A discussion.
-   * 
    * @class Discussion
    * @extends ExtensibleData
    * @param {Object} [json]
@@ -39,6 +37,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof Discussion
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -49,6 +49,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof Discussion
    * @param {Object}
    * @return Discussion this
    */
@@ -71,6 +72,7 @@ module.exports = function(GedcomX){
   /**
    * Get the title
    * 
+   * @memberof Discussion
    * @returns {String} title
    */
   Discussion.prototype.getTitle = function(){
@@ -80,6 +82,7 @@ module.exports = function(GedcomX){
   /**
    * Set the title
    * 
+   * @memberof Discussion
    * @param {String} title
    * @returns {Discussion} this
    */
@@ -91,6 +94,7 @@ module.exports = function(GedcomX){
   /**
    * Get the details
    * 
+   * @memberof Discussion
    * @returns {String} details
    */
   Discussion.prototype.getDetails = function(){
@@ -100,6 +104,7 @@ module.exports = function(GedcomX){
   /**
    * Set the details
    * 
+   * @memberof Discussion
    * @param {String} details
    * @returns {Discussion} this
    */
@@ -111,6 +116,7 @@ module.exports = function(GedcomX){
   /**
    * Get the created
    * 
+   * @memberof Discussion
    * @returns {Date} created
    */
   Discussion.prototype.getCreated = function(){
@@ -120,6 +126,7 @@ module.exports = function(GedcomX){
   /**
    * Set the created
    * 
+   * @memberof Discussion
    * @param {Date|Integer} created
    * @returns {Discussion} this
    */
@@ -133,6 +140,7 @@ module.exports = function(GedcomX){
   /**
    * Get the contributor
    * 
+   * @memberof Discussion
    * @returns {ResourceReference} contributor
    */
   Discussion.prototype.getContributor = function(){
@@ -142,6 +150,7 @@ module.exports = function(GedcomX){
   /**
    * Set the contributor
    * 
+   * @memberof Discussion
    * @param {ResourceReference} contributor
    * @returns {Discussion} this
    */
@@ -155,6 +164,7 @@ module.exports = function(GedcomX){
   /**
    * Get the modified
    * 
+   * @memberof Discussion
    * @returns {Date} modified
    */
   Discussion.prototype.getModified = function(){
@@ -164,6 +174,7 @@ module.exports = function(GedcomX){
   /**
    * Set the modified
    * 
+   * @memberof Discussion
    * @param {Date|Integer} modified
    * @returns {Discussion} this
    */
@@ -177,6 +188,7 @@ module.exports = function(GedcomX){
   /**
    * Get the numberOfComments
    * 
+   * @memberof Discussion
    * @returns {Integer} numberOfComments
    */
   Discussion.prototype.getNumberOfComments = function(){
@@ -186,6 +198,7 @@ module.exports = function(GedcomX){
   /**
    * Set the numberOfComments
    * 
+   * @memberof Discussion
    * @param {Integer} numberOfComments
    * @returns {Discussion} this
    */
@@ -197,6 +210,7 @@ module.exports = function(GedcomX){
   /**
    * Get the comments
    * 
+   * @memberof Discussion
    * @return {Comment[]}
    */
   Discussion.prototype.getComments = function(){
@@ -206,6 +220,7 @@ module.exports = function(GedcomX){
   /**
    * Set the comments
    * 
+   * @memberof Discussion
    * @param {Comment[]} comments
    * @returns {Discussion} this
    */
@@ -216,6 +231,7 @@ module.exports = function(GedcomX){
   /**
    * Add a comment
    * 
+   * @memberof Discussion
    * @param {Comment} comment
    * @returns {Discussion} this
    */
@@ -226,6 +242,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof Discussion
    * @return {Object} JSON object
    */
   Discussion.prototype.toJSON = function(){

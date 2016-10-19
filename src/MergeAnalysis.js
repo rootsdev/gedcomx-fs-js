@@ -35,6 +35,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof MergeAnalysis
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -45,6 +47,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof MergeAnalysis
    * @param {Object}
    * @return MergeAnalysis this
    */
@@ -65,6 +68,7 @@ module.exports = function(GedcomX){
   /**
    * Get the survivorResources
    * 
+   * @memberof MergeAnalysis
    * @return {ResourceReference[]}
    */
   MergeAnalysis.prototype.getSurvivorResources = function(){
@@ -74,6 +78,7 @@ module.exports = function(GedcomX){
   /**
    * Set the survivorResources
    * 
+   * @memberof MergeAnalysis
    * @param {ResourceReference[]} survivorResources
    * @returns {MergeAnalysis} this
    */
@@ -84,6 +89,7 @@ module.exports = function(GedcomX){
   /**
    * Add a survivorResource
    * 
+   * @memberof MergeAnalysis
    * @param {ResourceReference} survivorResource
    * @returns {MergeAnalysis} this
    */
@@ -94,6 +100,7 @@ module.exports = function(GedcomX){
   /**
    * Get the duplicateResources
    * 
+   * @memberof MergeAnalysis
    * @return {ResourceReference[]}
    */
   MergeAnalysis.prototype.getDuplicateResources = function(){
@@ -103,6 +110,7 @@ module.exports = function(GedcomX){
   /**
    * Set the duplicateResources
    * 
+   * @memberof MergeAnalysis
    * @param {ResourceReference[]} duplicateResources
    * @returns {MergeAnalysis} this
    */
@@ -113,6 +121,7 @@ module.exports = function(GedcomX){
   /**
    * Add a duplicateResource
    * 
+   * @memberof MergeAnalysis
    * @param {ResourceReference} duplicateResource
    * @returns {MergeAnalysis} this
    */
@@ -123,6 +132,7 @@ module.exports = function(GedcomX){
   /**
    * Get the conflictingResources
    * 
+   * @memberof MergeAnalysis
    * @return {MergeConflict[]}
    */
   MergeAnalysis.prototype.getConflictingResources = function(){
@@ -132,6 +142,7 @@ module.exports = function(GedcomX){
   /**
    * Set the conflictingResources
    * 
+   * @memberof MergeAnalysis
    * @param {MergeConflict[]} conflictingResources
    * @returns {MergeAnalysis} this
    */
@@ -142,6 +153,7 @@ module.exports = function(GedcomX){
   /**
    * Add a conflictingResource
    * 
+   * @memberof MergeAnalysis
    * @param {MergeConflict} conflictingResource
    * @returns {MergeAnalysis} this
    */
@@ -152,6 +164,7 @@ module.exports = function(GedcomX){
   /**
    * Get the survivor
    * 
+   * @memberof MergeAnalysis
    * @returns {ResourceReference} survivor
    */
   MergeAnalysis.prototype.getSurvivor = function(){
@@ -161,6 +174,7 @@ module.exports = function(GedcomX){
   /**
    * Set the survivor
    * 
+   * @memberof MergeAnalysis
    * @param {ResourceReference} survivor
    * @returns {MergeAnalysis} this
    */
@@ -174,6 +188,7 @@ module.exports = function(GedcomX){
   /**
    * Get the duplicate
    * 
+   * @memberof MergeAnalysis
    * @returns {ResourceReference} duplicate
    */
   MergeAnalysis.prototype.getDuplicate = function(){
@@ -183,6 +198,7 @@ module.exports = function(GedcomX){
   /**
    * Set the duplicate
    * 
+   * @memberof MergeAnalysis
    * @param {ResourceReference} duplicate
    * @returns {MergeAnalysis} this
    */
@@ -196,6 +212,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof MergeAnalysis
    * @return {Object} JSON object
    */
   MergeAnalysis.prototype.toJSON = function(){

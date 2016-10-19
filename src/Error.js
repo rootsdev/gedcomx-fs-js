@@ -36,6 +36,8 @@ module.exports = function(GedcomX){
   /**
    * Check whether the given object is an instance of this class.
    * 
+   * @memberof Error
+   * @static
    * @param {Object} obj
    * @returns {Boolean}
    */
@@ -46,6 +48,7 @@ module.exports = function(GedcomX){
   /**
    * Initialize from JSON
    * 
+   * @memberof Error
    * @param {Object}
    * @return Error this
    */
@@ -65,6 +68,7 @@ module.exports = function(GedcomX){
   /**
    * Get the code
    * 
+   * @memberof Error
    * @returns {Integer} code
    */
   Error.prototype.getCode = function(){
@@ -74,6 +78,7 @@ module.exports = function(GedcomX){
   /**
    * Set the code
    * 
+   * @memberof Error
    * @param {Integer} code
    * @returns {Error} this
    */
@@ -85,6 +90,7 @@ module.exports = function(GedcomX){
   /**
    * Get the label
    * 
+   * @memberof Error
    * @returns {String} label
    */
   Error.prototype.getLabel = function(){
@@ -94,6 +100,7 @@ module.exports = function(GedcomX){
   /**
    * Set the label
    * 
+   * @memberof Error
    * @param {String} label
    * @returns {Error} this
    */
@@ -105,6 +112,7 @@ module.exports = function(GedcomX){
   /**
    * Get the message
    * 
+   * @memberof Error
    * @returns {String} message
    */
   Error.prototype.getMessage = function(){
@@ -114,6 +122,7 @@ module.exports = function(GedcomX){
   /**
    * Set the message
    * 
+   * @memberof Error
    * @param {String} message
    * @returns {Error} this
    */
@@ -125,6 +134,7 @@ module.exports = function(GedcomX){
   /**
    * Get the stacktrace
    * 
+   * @memberof Error
    * @returns {String} stacktrace
    */
   Error.prototype.getStacktrace = function(){
@@ -134,6 +144,7 @@ module.exports = function(GedcomX){
   /**
    * Set the stacktrace
    * 
+   * @memberof Error
    * @param {String} stacktrace
    * @returns {Error} this
    */
@@ -145,6 +156,7 @@ module.exports = function(GedcomX){
   /**
    * Export the object as JSON
    * 
+   * @memberof Error
    * @return {Object} JSON object
    */
   Error.prototype.toJSON = function(){
