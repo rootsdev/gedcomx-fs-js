@@ -21,6 +21,7 @@ module.exports = function(GedcomX){
   require('./NameFormInfo')(GedcomX);
   require('./Reservation')(GedcomX);
   require('./Ordinance')(GedcomX);
+  require('./OAuth2')(GedcomX);
   require('./SearchInfo')(GedcomX);
   require('./SourceReference')(GedcomX);
   require('./Tag')(GedcomX);
