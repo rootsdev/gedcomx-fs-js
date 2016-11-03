@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>GedcomX FS JS Class: Qualifier</title>
+	<title>GedcomX FS JS Class: NameFormInfo</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,13 +54,13 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: Qualifier</h1>
+	<h1 class="page-title">Class: NameFormInfo</h1>
 <section>
 
 <header>
     
         <h2>
-        Qualifier
+        NameFormInfo
         </h2>
         
     
@@ -73,7 +73,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="Qualifier"><span class="type-signature"></span>new Qualifier( [json])</h4>
+    <h4 class="name" id="NameFormInfo"><span class="type-signature"></span>new NameFormInfo( [json])</h4>
     
     
 </dt>
@@ -81,7 +81,7 @@
 
     
     <div class="description">
-        Qualifiers are used to supply additional details about a piece of data.
+        Extra information about a name form.
     </div>
     
 
@@ -189,13 +189,6 @@
 	
 
 	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="https://github.com/FamilySearch/gedcomx/blob/master/specifications/json-format-specification.md#qualifier">GEDCOM X JSON Spec</a></li>
-			</ul>
-	</dd>
-	
 
 	
 </dl>
@@ -249,7 +242,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="getName"><span class="type-signature"></span>getName()</h4>
+    <h4 class="name" id="getOrder"><span class="type-signature"></span>getOrder()</h4>
     
     
 </dt>
@@ -257,7 +250,7 @@
 
     
     <div class="description">
-        Get the name
+        Get the order
     </div>
     
 
@@ -323,107 +316,9 @@
     
             
 <div class="param-desc">
-    name
+    order
 </div>
 
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">String</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="getValue"><span class="type-signature"></span>getValue()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Get the value
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
 
 
 <dl>
@@ -578,23 +473,10 @@
     
             
 <div class="param-desc">
-    this
+    NameFormInfo this
 </div>
 
 
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Qualifier.html">Qualifier</a></span>
-
-
-
-    </dd>
-</dl>
 
 
         
@@ -754,7 +636,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="setName"><span class="type-signature"></span>setName(name)</h4>
+    <h4 class="name" id="setOrder"><span class="type-signature"></span>setOrder(order)</h4>
     
     
 </dt>
@@ -762,7 +644,7 @@
 
     
     <div class="description">
-        Set the name
+        Set the order
     </div>
     
 
@@ -797,7 +679,7 @@
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>order</code></td>
             
 
             <td class="type">
@@ -878,7 +760,7 @@
     
             
 <div class="param-desc">
-    This instance.
+    this
 </div>
 
 
@@ -889,159 +771,7 @@
     </dt>
     <dd>
         
-<span class="param-type"><a href="Qualifier.html">Qualifier</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="setValue"><span class="type-signature"></span>setValue(value)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Set the value
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>value</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    This instance.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Qualifier.html">Qualifier</a></span>
+<span class="param-type"><a href="NameFormInfo.html">NameFormInfo</a></span>
 
 
 
