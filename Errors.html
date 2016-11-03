@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>GedcomX FS JS Class: AtomCategory</title>
+	<title>GedcomX FS JS Class: Errors</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,13 +54,13 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: AtomCategory</h1>
+	<h1 class="page-title">Class: Errors</h1>
 <section>
 
 <header>
     
         <h2>
-        AtomCategory
+        Errors
         </h2>
         
     
@@ -73,7 +73,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="AtomCategory"><span class="type-signature"></span>new AtomCategory( [json])</h4>
+    <h4 class="name" id="Errors"><span class="type-signature"></span>new Errors( [json])</h4>
     
     
 </dt>
@@ -81,7 +81,7 @@
 
     
     <div class="description">
-        Information about a category associated with an atom entry or feed.
+        A list of errors.
     </div>
     
 
@@ -189,15 +189,6 @@
 	
 
 	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="https://github.com/FamilySearch/gedcomx-rs/blob/master/specifications/atom-model-specification.md#atom-json-media-type">GEDCOM X Atom JSON Spec</a></li>
-			
-			<li><a href="https://tools.ietf.org/html/rfc4287#section-4.2.2">RFC 4287</a></li>
-			</ul>
-	</dd>
-	
 
 	
 </dl>
@@ -228,7 +219,7 @@
 
 
     <ul>
-        <li><a href="AtomCommon.html">AtomCommon</a></li>
+        <li><a href="Base.html">Base</a></li>
     </ul>
 
 
@@ -251,7 +242,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="getBase"><span class="type-signature"></span>getBase()</h4>
+    <h4 class="name" id="addError"><span class="type-signature"></span>addError(error)</h4>
     
     
 </dt>
@@ -259,7 +250,7 @@
 
     
     <div class="description">
-        Get the base
+        Add a errors
     </div>
     
 
@@ -268,6 +259,56 @@
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Error.html">Error</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -278,15 +319,6 @@
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="AtomCommon.html#getBase">AtomCommon#getBase</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -334,7 +366,7 @@
     
             
 <div class="param-desc">
-    base
+    this
 </div>
 
 
@@ -345,7 +377,7 @@
     </dt>
     <dd>
         
-<span class="param-type">String</span>
+<span class="param-type"><a href="Errors.html">Errors</a></span>
 
 
 
@@ -362,7 +394,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="getLang"><span class="type-signature"></span>getLang()</h4>
+    <h4 class="name" id="getErrors"><span class="type-signature"></span>getErrors()</h4>
     
     
 </dt>
@@ -370,7 +402,7 @@
 
     
     <div class="description">
-        Get the lang
+        Get the errors
     </div>
     
 
@@ -389,15 +421,6 @@
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="AtomCommon.html#getLang">AtomCommon#getLang</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -444,10 +467,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    lang
-</div>
-
 
 
 <dl>
@@ -456,7 +475,7 @@
     </dt>
     <dd>
         
-<span class="param-type">String</span>
+<span class="param-type">Array.&lt;<a href="Error.html">Error</a>></span>
 
 
 
@@ -551,16 +570,12 @@
 	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="AtomCommon.html#init">AtomCommon#init</a>
-			</li>
-		</ul>
-	</dd>
-	
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Base.html#init">Base#init</a>
+    </li></ul></dd>
     
 
     
@@ -606,23 +621,10 @@
     
             
 <div class="param-desc">
-    this
+    Errors this
 </div>
 
 
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="AtomCommon.html">AtomCommon</a></span>
-
-
-
-    </dd>
-</dl>
 
 
         
@@ -634,7 +636,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="setBase"><span class="type-signature"></span>setBase(base)</h4>
+    <h4 class="name" id=".isInstance"><span class="type-signature">&lt;static> </span>isInstance(obj)</h4>
     
     
 </dt>
@@ -642,7 +644,7 @@
 
     
     <div class="description">
-        Set the base attribute
+        Check whether the given object is an instance of this class.
     </div>
     
 
@@ -677,13 +679,13 @@
 
         <tr>
             
-                <td class="name"><code>base</code></td>
+                <td class="name"><code>obj</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Object</span>
 
 
 
@@ -711,15 +713,6 @@
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="AtomCommon.html#setBase">AtomCommon#setBase</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -766,10 +759,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    this
-</div>
-
 
 
 <dl>
@@ -778,7 +767,7 @@
     </dt>
     <dd>
         
-<span class="param-type"><a href="AtomCommon.html">AtomCommon</a></span>
+<span class="param-type">Boolean</span>
 
 
 
@@ -795,7 +784,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="setLang"><span class="type-signature"></span>setLang(lang)</h4>
+    <h4 class="name" id="setErrors"><span class="type-signature"></span>setErrors(errors)</h4>
     
     
 </dt>
@@ -803,7 +792,7 @@
 
     
     <div class="description">
-        Set the lang
+        Set the errors
     </div>
     
 
@@ -838,13 +827,13 @@
 
         <tr>
             
-                <td class="name"><code>lang</code></td>
+                <td class="name"><code>errors</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Array.&lt;<a href="Error.html">Error</a>></span>
 
 
 
@@ -872,15 +861,6 @@
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="AtomCommon.html#setLang">AtomCommon#setLang</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -939,7 +919,7 @@
     </dt>
     <dd>
         
-<span class="param-type"><a href="AtomCommon.html">AtomCommon</a></span>
+<span class="param-type"><a href="Errors.html">Errors</a></span>
 
 
 
@@ -984,16 +964,12 @@
 	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="AtomCommon.html#toJSON">AtomCommon#toJSON</a>
-			</li>
-		</ul>
-	</dd>
-	
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Base.html#toJSON">Base#toJSON</a>
+    </li></ul></dd>
     
 
     
