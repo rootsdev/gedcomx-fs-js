@@ -4,6 +4,7 @@ module.exports = function(GedcomX){
   GedcomX.enableAtomExtensions();
   
   // New data types
+  require('./ArtifactMetadata')(GedcomX);
   require('./ChangeInfo')(GedcomX);
   require('./ChildAndParentsRelationship')(GedcomX);
   require('./Comment')(GedcomX);
@@ -25,5 +26,6 @@ module.exports = function(GedcomX){
   require('./AtomEntry')(GedcomX);
   require('./Person')(GedcomX);
   require('./Root')(GedcomX);
+  require('./SourceDescription')(GedcomX);
   
 };
