@@ -17,6 +17,7 @@ module.exports = function(GedcomX){
   require('./Merge')(GedcomX);
   require('./MergeAnalysis')(GedcomX);
   require('./MergeConflict')(GedcomX);
+  require('./NameFormInfo')(GedcomX);
   require('./SearchInfo')(GedcomX);
   require('./SourceReference')(GedcomX);
   require('./Tag')(GedcomX);
@@ -24,6 +25,7 @@ module.exports = function(GedcomX){
   
   // Property extensions
   require('./AtomEntry')(GedcomX);
+  require('./NameForm')(GedcomX);
   require('./Person')(GedcomX);
   require('./Root')(GedcomX);
   require('./SourceDescription')(GedcomX);
