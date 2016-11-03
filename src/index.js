@@ -18,6 +18,8 @@ module.exports = function(GedcomX){
   require('./MergeAnalysis')(GedcomX);
   require('./MergeConflict')(GedcomX);
   require('./NameFormInfo')(GedcomX);
+  require('./Reservation')(GedcomX);
+  require('./Ordinance')(GedcomX);
   require('./SearchInfo')(GedcomX);
   require('./SourceReference')(GedcomX);
   require('./Tag')(GedcomX);

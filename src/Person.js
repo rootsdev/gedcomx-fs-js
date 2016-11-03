@@ -4,7 +4,7 @@
 module.exports = function(GedcomX){
   
   // Extend serialization properties
-  GedcomX.Person.jsonProps.push('discussion-references');
+  GedcomX.Person.jsonProps.push('discussion-references', 'ordinances');
   
   // Override init() so that we can deserialize normalized values
   var oldInit = GedcomX.Person.prototype.init;
@@ -12,6 +12,7 @@ module.exports = function(GedcomX){
     oldInit.call(this, json);
     if(json){
       this.setDiscussionReferences(json['discussion-references']);
+      this.setOrdinances(json.ordinances);
     }
   };
   
@@ -51,6 +52,44 @@ module.exports = function(GedcomX){
    */
   GedcomX.Person.prototype.getDiscussionReferences = function(){
     return this['discussion-references'] || [];
+  };
+  
+  /**
+   * Set the ordinances
+   * 
+   * @function setOrdinances
+   * @instance
+   * @memberof Person
+   * @param {Ordinance[]} ordinances
+   * @return {Person} this
+   */
+  GedcomX.Person.prototype.setOrdinances = function(ordinances){
+    return this._setArray(ordinances, 'ordinances', 'addOrdinance');
+  };
+  
+  /**
+   * Add an ordinance
+   * 
+   * @function addOrdinance
+   * @instance
+   * @memberof Person
+   * @param {Ordinance} ordinance
+   * @return {Person} this
+   */
+  GedcomX.Person.prototype.addOrdinance = function(ordinance){
+    return this._arrayPush(ordinance, 'ordinances', GedcomX.Ordinance);
+  };
+  
+  /**
+   * Get the ordinances
+   * 
+   * @function getOrdinances
+   * @instance
+   * @memberof Person
+   * @return {Ordinance[]} ordinances
+   */
+  GedcomX.Person.prototype.getOrdinances = function(){
+    return this.ordinances || [];
   };
   
 };

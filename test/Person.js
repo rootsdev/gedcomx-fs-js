@@ -41,4 +41,42 @@ describe('Person property extensions', function(){
     
   });
   
+  describe('ordinances', function(){
+    
+    var json = {
+      "ordinances" : [ {
+        "type" : "http://lds.org/Confirmation",
+        "status" : "http://familysearch.org/v1/Completed",
+        "templeCode" : "NZEAL"
+      } ]
+    };
+  
+    it('Create with JSON', function(){
+      test(GedcomX.Person(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX.Person()
+        .addOrdinance(
+          GedcomX.Ordinance()
+          .setType(json.ordinances[0].type)
+          .setStatus(json.ordinances[0].status)
+          .setTempleCode(json.ordinances[0].templeCode)
+      ));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX.Person(json).toJSON(), json);
+    });
+
+    function test(person){
+      assert.equal(person.getOrdinances().length, 1);
+      var ordinance = person.getOrdinances()[0];
+      assert.equal(ordinance.getType(), json.ordinances[0].type);
+      assert.equal(ordinance.getStatus(), json.ordinances[0].status);
+      assert.equal(ordinance.getTempleCode(), json.ordinances[0].templeCode);
+    }
+    
+  });
+  
 });
