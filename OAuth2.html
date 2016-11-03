@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>GedcomX FS JS Class: FieldValueDescriptor</title>
+	<title>GedcomX FS JS Class: OAuth2</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,13 +54,13 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: FieldValueDescriptor</h1>
+	<h1 class="page-title">Class: OAuth2</h1>
 <section>
 
 <header>
     
         <h2>
-        FieldValueDescriptor
+        OAuth2
         </h2>
         
     
@@ -73,7 +73,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="FieldValueDescriptor"><span class="type-signature"></span>new FieldValueDescriptor( [json])</h4>
+    <h4 class="name" id="OAuth2"><span class="type-signature"></span>new OAuth2( [json])</h4>
     
     
 </dt>
@@ -81,8 +81,7 @@
 
     
     <div class="description">
-        Metadata about the structure and layout of a field, as well as the expected
-data to be extracted from a field.
+        OAuth 2 token responses
     </div>
     
 
@@ -190,13 +189,6 @@ data to be extracted from a field.
 	
 
 	
-	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
-	<dd class="tag-see">
-		<ul>
-			<li><a href="https://github.com/FamilySearch/gedcomx-record/blob/master/specifications/record-specification.md#field-value-descriptor">GEDCOM X Records Spec</a></li>
-			</ul>
-	</dd>
-	
 
 	
 </dl>
@@ -227,7 +219,7 @@ data to be extracted from a field.
 
 
     <ul>
-        <li><a href="ExtensibleData.html">ExtensibleData</a></li>
+        <li><a href="Base.html">Base</a></li>
     </ul>
 
 
@@ -250,7 +242,7 @@ data to be extracted from a field.
             
 <hr>
 <dt>
-    <h4 class="name" id="addField"><span class="type-signature"></span>addField(field)</h4>
+    <h4 class="name" id="getAccessToken"><span class="type-signature"></span>getAccessToken()</h4>
     
     
 </dt>
@@ -258,7 +250,7 @@ data to be extracted from a field.
 
     
     <div class="description">
-        Add a field
+        Get the access token
     </div>
     
 
@@ -267,56 +259,6 @@ data to be extracted from a field.
     
 
     
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>field</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Field.html">Field</a></span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
     
 
     
@@ -327,15 +269,6 @@ data to be extracted from a field.
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#addField">ExtensibleData#addField</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -383,386 +316,7 @@ data to be extracted from a field.
     
             
 <div class="param-desc">
-    this
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="ExtensibleData.html">ExtensibleData</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="addLink"><span class="type-signature"></span>addLink(link)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Add a link
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>link</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Link.html">Link</a></span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#addLink">ExtensibleData#addLink</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    this
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="ExtensibleData.html">ExtensibleData</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="getFields"><span class="type-signature"></span>getFields()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Get the fields
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#getFields">ExtensibleData#getFields</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array.&lt;<a href="Field.html">Field</a>></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="getId"><span class="type-signature"></span>getId()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Get the object's id.
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#getId">ExtensibleData#getId</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    Id
+    access_token
 </div>
 
 
@@ -790,7 +344,7 @@ data to be extracted from a field.
             
 <hr>
 <dt>
-    <h4 class="name" id="getLink"><span class="type-signature"></span>getLink(rel)</h4>
+    <h4 class="name" id="getError"><span class="type-signature"></span>getError()</h4>
     
     
 </dt>
@@ -798,7 +352,7 @@ data to be extracted from a field.
 
     
     <div class="description">
-        Get a link
+        Get the error
     </div>
     
 
@@ -807,56 +361,6 @@ data to be extracted from a field.
     
 
     
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>rel</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
     
 
     
@@ -867,15 +371,6 @@ data to be extracted from a field.
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#getLink">ExtensibleData#getLink</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -922,6 +417,10 @@ data to be extracted from a field.
     <h5>Returns:</h5>
     
             
+<div class="param-desc">
+    error
+</div>
+
 
 
 <dl>
@@ -930,7 +429,7 @@ data to be extracted from a field.
     </dt>
     <dd>
         
-<span class="param-type"><a href="Link.html">Link</a></span>
+<span class="param-type">String</span>
 
 
 
@@ -947,7 +446,7 @@ data to be extracted from a field.
             
 <hr>
 <dt>
-    <h4 class="name" id="getLinks"><span class="type-signature"></span>getLinks()</h4>
+    <h4 class="name" id="getErrorDescription"><span class="type-signature"></span>getErrorDescription()</h4>
     
     
 </dt>
@@ -955,7 +454,7 @@ data to be extracted from a field.
 
     
     <div class="description">
-        Get the links
+        Get the error description
     </div>
     
 
@@ -974,15 +473,6 @@ data to be extracted from a field.
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#getLinks">ExtensibleData#getLinks</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -1029,6 +519,10 @@ data to be extracted from a field.
     <h5>Returns:</h5>
     
             
+<div class="param-desc">
+    error_description
+</div>
+
 
 
 <dl>
@@ -1037,7 +531,109 @@ data to be extracted from a field.
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;<a href="Link.html">Link</a>></span>
+<span class="param-type">String</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getTokenType"><span class="type-signature"></span>getTokenType()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Get the token type
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    token_type
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
 
 
 
@@ -1132,16 +728,12 @@ data to be extracted from a field.
 	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#init">ExtensibleData#init</a>
-			</li>
-		</ul>
-	</dd>
-	
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Base.html#init">Base#init</a>
+    </li></ul></dd>
     
 
     
@@ -1187,23 +779,10 @@ data to be extracted from a field.
     
             
 <div class="param-desc">
-    this
+    OAuth2 this
 </div>
 
 
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="ExtensibleData.html">ExtensibleData</a></span>
-
-
-
-    </dd>
-</dl>
 
 
         
@@ -1215,7 +794,7 @@ data to be extracted from a field.
             
 <hr>
 <dt>
-    <h4 class="name" id="setFields"><span class="type-signature"></span>setFields(fields)</h4>
+    <h4 class="name" id=".isInstance"><span class="type-signature">&lt;static> </span>isInstance(obj)</h4>
     
     
 </dt>
@@ -1223,7 +802,7 @@ data to be extracted from a field.
 
     
     <div class="description">
-        Set the fields
+        Check whether the given object is an instance of this class.
     </div>
     
 
@@ -1258,13 +837,13 @@ data to be extracted from a field.
 
         <tr>
             
-                <td class="name"><code>fields</code></td>
+                <td class="name"><code>obj</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;<a href="Field.html">Field</a>></span>
+<span class="param-type">Object</span>
 
 
 
@@ -1293,15 +872,6 @@ data to be extracted from a field.
 	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#setFields">ExtensibleData#setFields</a>
-			</li>
-		</ul>
-	</dd>
-	
 
     
 
@@ -1347,10 +917,6 @@ data to be extracted from a field.
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    this
-</div>
-
 
 
 <dl>
@@ -1359,7 +925,7 @@ data to be extracted from a field.
     </dt>
     <dd>
         
-<span class="param-type"><a href="ExtensibleData.html">ExtensibleData</a></span>
+<span class="param-type">Boolean</span>
 
 
 
@@ -1376,7 +942,7 @@ data to be extracted from a field.
             
 <hr>
 <dt>
-    <h4 class="name" id="setId"><span class="type-signature"></span>setId(id)</h4>
+    <h4 class="name" id="setAccessToken"><span class="type-signature"></span>setAccessToken(access_token)</h4>
     
     
 </dt>
@@ -1384,7 +950,7 @@ data to be extracted from a field.
 
     
     <div class="description">
-        Set the object's id.
+        Set the access token
     </div>
     
 
@@ -1419,7 +985,7 @@ data to be extracted from a field.
 
         <tr>
             
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>access_token</code></td>
             
 
             <td class="type">
@@ -1454,15 +1020,6 @@ data to be extracted from a field.
 	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#setId">ExtensibleData#setId</a>
-			</li>
-		</ul>
-	</dd>
-	
 
     
 
@@ -1509,7 +1066,7 @@ data to be extracted from a field.
     
             
 <div class="param-desc">
-    This object, for chaining.
+    this
 </div>
 
 
@@ -1520,7 +1077,7 @@ data to be extracted from a field.
     </dt>
     <dd>
         
-<span class="param-type"><a href="ExtensibleData.html">ExtensibleData</a></span>
+<span class="param-type"><a href="OAuth2.html">OAuth2</a></span>
 
 
 
@@ -1537,7 +1094,7 @@ data to be extracted from a field.
             
 <hr>
 <dt>
-    <h4 class="name" id="setLinks"><span class="type-signature"></span>setLinks(links)</h4>
+    <h4 class="name" id="setError"><span class="type-signature"></span>setError(error)</h4>
     
     
 </dt>
@@ -1545,7 +1102,7 @@ data to be extracted from a field.
 
     
     <div class="description">
-        Set the links
+        Set the error
     </div>
     
 
@@ -1580,13 +1137,13 @@ data to be extracted from a field.
 
         <tr>
             
-                <td class="name"><code>links</code></td>
+                <td class="name"><code>error</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Links.html">Links</a></span>
+<span class="param-type">String</span>
 
 
 
@@ -1614,15 +1171,6 @@ data to be extracted from a field.
 
 	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#setLinks">ExtensibleData#setLinks</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -1681,7 +1229,311 @@ data to be extracted from a field.
     </dt>
     <dd>
         
-<span class="param-type"><a href="ExtensibleData.html">ExtensibleData</a></span>
+<span class="param-type"><a href="OAuth2.html">OAuth2</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setErrorDescription"><span class="type-signature"></span>setErrorDescription(error_description)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Set the error description
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error_description</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    this
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="OAuth2.html">OAuth2</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setTokenType"><span class="type-signature"></span>setTokenType(token_type)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Set the token type
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>token_type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    this
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="OAuth2.html">OAuth2</a></span>
 
 
 
@@ -1726,16 +1578,12 @@ data to be extracted from a field.
 	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="ExtensibleData.html#toJSON">ExtensibleData#toJSON</a>
-			</li>
-		</ul>
-	</dd>
-	
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Base.html#toJSON">Base#toJSON</a>
+    </li></ul></dd>
     
 
     
