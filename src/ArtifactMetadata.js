@@ -1,7 +1,7 @@
 module.exports = function(GedcomX){
   
   /**
-   * Class description
+   * A representation of metadata about an artifact such as a memory.
    * 
    * @class ArtifactMetadata
    * @extends Base
