@@ -18,7 +18,7 @@ npm install --save gedcomx-fs-js
 CDN via [unpkg](https://unpkg.com/#/)
 
 ```html
-<script src="https://unpkg.com/gedcomx-fs-js@1.1.0/dist/gedcomx-fs.min.js"></script>
+<script src="https://unpkg.com/gedcomx-fs-js@1.2.1/dist/gedcomx-fs.min.js"></script>
 ```
 
 ## Usage
