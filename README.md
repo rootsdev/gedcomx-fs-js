@@ -9,21 +9,26 @@ be used with [gedcomx-js](https://github.com/rootsdev/gedcomx-js).
 
 ## Install
 
-NPM
+First install [gedcomx-js](https://github.com/rootsdev/gedcomx-js).
+
+__NPM__
 
 ```
-npm install --save gedcomx-fs-js
+npm install --save gedcomx-js gedcomx-fs-js
 ```
 
-CDN via [unpkg](https://unpkg.com/#/)
+__CDN via [unpkg](https://unpkg.com/#/)__
 
 ```html
 <script src="https://unpkg.com/gedcomx-fs-js@1.2.1/dist/gedcomx-fs.min.js"></script>
 ```
 
+In the browser, gedcomx-fs-js is attached to the `window` as a global named `GedcomXFS`.
+
 ## Usage
 
 ```js
-// Enable the FamilySearch extensions
-FSExtensions(GedcomX);
+// First load gedcomx-js. Then we pass it to the FSExtensions object so that
+// it can attach all of the extensions
+GedcomXFS(GedcomX);
 ```

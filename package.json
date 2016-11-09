@@ -9,8 +9,8 @@
     "coverage": "istanbul cover --report lcovonly _mocha -- --recursive && codecov",
     "prepublish": "npm run build",
     "build": "rm -rf dist && npm run build:full && npm run build:min",
-    "build:full": "webpack src/index.js --output-filename dist/gedcomx-fs.js",
-    "build:min": "webpack src/index.js --output-filename dist/gedcomx-fs.min.js --optimize-minimize"
+    "build:full": "webpack --output-filename gedcomx-fs.js",
+    "build:min": "webpack --output-filename gedcomx-fs.min.js --optimize-minimize"
   },
   "repository": {
     "type": "git",
