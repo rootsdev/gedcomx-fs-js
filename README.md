@@ -7,6 +7,20 @@
 JavaScript library for FamilySearch extensions to the GEDCOM X spec. Designed to
 be used with [gedcomx-js](https://github.com/rootsdev/gedcomx-js).
 
+## Install
+
+NPM
+
+```
+npm install --save gedcomx-fs-js
+```
+
+CDN via [unpkg](https://unpkg.com/#/)
+
+```html
+<script src="https://unpkg.com/gedcomx-fs-js@1.1.0/dist/gedcomx-fs.min.js"></script>
+```
+
 ## Usage
 
 ```js
