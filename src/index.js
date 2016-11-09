@@ -31,6 +31,7 @@ module.exports = function(GedcomX){
   require('./AtomEntry')(GedcomX);
   require('./NameForm')(GedcomX);
   require('./Person')(GedcomX);
+  require('./PlaceDescription')(GedcomX);
   require('./Root')(GedcomX);
   require('./SourceDescription')(GedcomX);
   
