@@ -20,15 +20,15 @@ npm install --save gedcomx-js gedcomx-fs-js
 __CDN via [unpkg](https://unpkg.com/#/)__
 
 ```html
-<script src="https://unpkg.com/gedcomx-fs-js@1.2.2/dist/gedcomx-fs.min.js"></script>
+<script src="https://unpkg.com/gedcomx-fs-js@1.3.0/dist/gedcomx-fs.min.js"></script>
 ```
 
-In the browser, gedcomx-fs-js is attached to the `window` as a global named `GedcomXFS`.
+In the browser, gedcomx-fs-js is attached to the `window` as a global named `GedcomxFS`.
 
 ## Usage
 
 ```js
 // First load gedcomx-js. Then we pass it to the FSExtensions object so that
 // it can attach all of the extensions
-GedcomXFS(GedcomX);
+GedcomX.addExtensions(GedcomxFS);
 ```
