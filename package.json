@@ -1,6 +1,6 @@
 {
   "name": "gedcomx-fs-js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "JavaScript library for FamilySearch extensions to the GEDCOM X spec.",
   "main": "src/index.js",
   "scripts": {
@@ -8,9 +8,9 @@
     "docs": "jsdoc -c jsdoc.json",
     "coverage": "istanbul cover --report lcovonly _mocha -- --recursive && codecov",
     "prepublish": "npm run build",
-    "build": "npm run build:full && npm run build:min",
-    "build:full": "webpack src/index.js --output-filename dist/gedcomx.js",
-    "build:min": "webpack src/index.js --output-filename dist/gedcomx.min.js --optimize-minimize"
+    "build": "rm -rf dist && npm run build:full && npm run build:min",
+    "build:full": "webpack src/index.js --output-filename dist/gedcomx-fs.js",
+    "build:min": "webpack src/index.js --output-filename dist/gedcomx-fs.min.js --optimize-minimize"
   },
   "repository": {
     "type": "git",
