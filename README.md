@@ -28,7 +28,6 @@ In the browser, gedcomx-fs-js is attached to the `window` as a global named `Ged
 ## Usage
 
 ```js
-// First load gedcomx-js. Then we pass it to the FSExtensions object so that
-// it can attach all of the extensions
+// First load gedcomx-js. Then we register the FS extensions.
 GedcomX.addExtensions(GedcomxFS);
 ```
