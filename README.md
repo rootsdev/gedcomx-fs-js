@@ -25,7 +25,7 @@ __CDN via [unpkg](https://unpkg.com/#/)__
 
 In the browser, gedcomx-fs-js is attached to the `window` as a global named `GedcomxFS`.
 
-#### Full Build
+__Full Build__
 
 As of 1.3.1 we also publish a full build which includes gedcomx-js and thus
 doesn't require you to install or include it seperately and also doesn't
