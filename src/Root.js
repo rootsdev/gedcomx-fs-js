@@ -5,7 +5,7 @@ module.exports = function(GedcomX){
   
   // Extend serialization properties
   GedcomX.Root.jsonProps.push('features','childAndParentsRelationships', 
-    'discussions', 'users', 'mergeAnalyses', 'merges');
+    'discussions', 'users', 'mergeAnalyses', 'merges', 'errors');
   
   // Override init() so that we can deserialize normalized values
   var oldInit = GedcomX.Root.prototype.init;
@@ -18,6 +18,7 @@ module.exports = function(GedcomX){
       this.setUsers(json.users);
       this.setMergeAnalyses(json.mergeAnalyses);
       this.setMerges(json.merges);
+      this.setErrors(json.errors);
     }
   };
   
@@ -247,6 +248,44 @@ module.exports = function(GedcomX){
    */
   GedcomX.Root.prototype.getMerges = function(){
     return this.merges || [];
+  };
+  
+  /**
+   * Get the errors
+   * 
+   * @function getMerges
+   * @instance
+   * @memberof Root
+   * @return {Error[]}
+   */
+  GedcomX.Root.prototype.getErrors = function(){
+    return this.errors || [];
+  };
+  
+  /**
+   * Set the errors
+   * 
+   * @function getMerges
+   * @instance
+   * @memberof Root
+   * @param {Error[]} errors
+   * @returns {Root} this
+   */
+  GedcomX.Root.prototype.setErrors = function(errors){
+    return this._setArray(errors, 'errors', 'addError');
+  };
+  
+  /**
+   * Add a errors
+   * 
+   * @function getMerges
+   * @instance
+   * @memberof Root
+   * @param {Error} error
+   * @returns {Root} this
+   */
+  GedcomX.Root.prototype.addError = function(error){
+    return this._arrayPush(error, 'errors', GedcomX.Error);
   };
   
 };

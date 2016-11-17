@@ -293,4 +293,37 @@ describe('Root GedcomX property extensions', function(){
     
   });
   
+  describe('errors', function(){
+  
+    var json = {
+      "errors" : [ {
+        "code" : 401,
+        "message" : "Unable to  read tf person.",
+        "stacktrace" : "GET http://tf.prod.us-east-1.prod.fslocal.org/tf/person/KWC8-LKC?oneHops=none returned a response status of 401 Unauthorized:\n{\n\"401\": \"Unauthorized\"\n}"
+      } ]
+    };
+  
+    it('Create with JSON', function(){
+      test(GedcomX(json));
+    });
+    
+    it('Build', function(){
+      test(GedcomX().addError(new GedcomX.Error(json.errors[0])));
+    });
+    
+    it('toJSON', function(){
+      assert.deepEqual(GedcomX(json).toJSON(), json);
+    });
+
+    function test(gedx){
+      assert.equal(gedx.getErrors().length, 1);
+      var error = gedx.getErrors()[0];
+      assert.equal(error.getCode(), json.errors[0].code);
+      assert.equal(error.getLabel(), json.errors[0].label);
+      assert.equal(error.getMessage(), json.errors[0].message);
+      assert.equal(error.getStacktrace(), json.errors[0].stacktrace);
+    }
+    
+  });
+  
 });

@@ -11,7 +11,6 @@ module.exports = function(GedcomX){
   require('./Discussion')(GedcomX);
   require('./DiscussionReference')(GedcomX);
   require('./Error')(GedcomX);
-  require('./Errors')(GedcomX);
   require('./FeatureSet')(GedcomX);
   require('./FeedbackInfo')(GedcomX);
   require('./MatchInfo')(GedcomX);
